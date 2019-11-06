@@ -2,9 +2,21 @@
 	margin: 0;
 	padding: 0;
 }
-html, body{ 
-    height: 100% !important;
-    width: 100% !important;
+html,
+body {
+	height: 100%;
+}
+.wrapper {
+	position: relative;
+	min-height: 100%;
+}
+.logo{
+    width: 100px !important;
+    height: auto;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
 }
 .login{
     position: relative;
@@ -79,11 +91,6 @@ html, body{
 	width: 100%;
 	height: 80px;
     background-color: gray;
-}
-
-.wrapper{
-    position: relative;
-	min-height: 100%;
 }
 .main{
     padding-bottom: 90px;
@@ -245,5 +252,5 @@ html, body{
     color: black;
   }
 .catalog-item-active{
-    color:#007bff;
+    color:#007bff !important;
 }

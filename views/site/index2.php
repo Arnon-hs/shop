@@ -72,7 +72,7 @@
                 </div>
                 <div class="row mb-4 ">
                     <div class="item_box col mr-4">
-                        <a href="http://coffee/products">
+                        <a href="http://shop/product/1">
                             <img src="/template/images/product-details/te_guan_in.jpg" >
                         </a>
                         <div class="name_product">
@@ -81,7 +81,7 @@
                         
                     </div> 
                     <div class="item_box col mr-4">
-                        <a href="http://coffee/products">
+                        <a href="http://shop/product/2">
                             <img src="/template/images/product-details/puer.jpg" >
                         </a>
                         <div class="name_product">
@@ -89,7 +89,7 @@
                         </div> 
                     </div>
                     <div class="item_box col mr-4">
-                        <a href="http://coffee/products">
+                        <a href="http://shop/product/3">
                             <img src="/template/images/product-details/karkade.jpg" >
                         </a>
                         <div class="name_product">
@@ -97,7 +97,7 @@
                         </div>
                     </div>
                     <div class="item_box col mr-4">
-                        <a href="http://coffee/products">
+                        <a href="http://shop/product/4">
                             <img src="/template/images/product-details/earl_grey.jpg" >
                         </a>
                         <div class="name_product">
@@ -105,7 +105,7 @@
                         </div>
                     </div>      
                     <div class="item_box col">
-                        <a href="http://coffee/products">
+                        <a href="http://shop/product/5">
                             <img src="/template/images/product-details/da_hun_pao.jpg" >
                         </a>
                         <div class="name_product">

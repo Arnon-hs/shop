@@ -6,12 +6,12 @@
                     <img src="/template/images/product-details/te_guan_in.jpg">
                 </div>
                 <div class="col-5">
-                    <p>Артикул:21123</p>
-                    <h1>Китайский чай зеленый Те Гуань Инь</h1>
+                    <p>Артикул:<?php echo $product['code'];?> </p>
+                    <h1><?php echo $product['name'];?></h1>
                     <div class="row">
                         <div class="price col-4">
                             <label for="price_product" class="col-form-label">Цена:</label>
-                            <h3 id="price_product" >300</h3>
+                            <h3 id="price_product" ><?php echo $product['price'];?></h3>
                         </div>
                         <div class="count-product col-3">
                                 <div class="form-group">
@@ -43,7 +43,7 @@
         <div class="row mb-4">
             <div class="description col-8">
                     <h4>Описание:</h4>
-                    <p>Зеленый чай родом из провинции Юньнань обладает ярким цветочным ароматом с оттенками сирени</p>
+                    <p><?php echo $product['description'];?></p>
             </div>
             <div class="col-4 pohojie">
                 <h4>Похожие товары</h4>

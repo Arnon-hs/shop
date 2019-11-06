@@ -13,7 +13,7 @@
                         <?php endforeach; ?>
             </div>
 
-            <div class="col-10 productList ">
+            <div class="col-10 productList">
                 <h2 class="text-center">Последние товары</h2>
                 <div class="row mb-4 mt-4 mr-4 ml-4">
                     <?php foreach ($latestProducts as $product): ?>
@@ -21,8 +21,8 @@
                             <div class="product-image-wrapper">
                                 <div class="single-products">
                                     <div class="productinfo text-center">
-                                        <img src="/template/images/product-details/te_guan_in.jpg" alt="" />
-                                        <h2><?php echo $product['price'];?>Р</h2>
+                                        <img src="/template/images/product-details/lavazza Rossa.jpg" alt="" />
+                                        <h2><?php echo $product['price'];?>р</h2>
                                         <p>
                                             <a href="/product/<?php echo $product['id'];?>">
                                                 <?php echo $product['name'];?>
@@ -44,6 +44,5 @@
             </div>
         </div>
     </div>
-</section>
 
 <?php include ROOT . '/views/layouts/footer.php'; ?>

@@ -1,77 +1,55 @@
-<form class="needs-validation" novalidate>
+<form class="needs-validation" method="post" action="#">
     <div class="form-row">
         <div class="col-md-4 mb-3">
-            <label for="validationCustom01">First Name</label>
-            <input type="text" class="form-control" id="validationCustom01" placeholder="First Name" value="Mihail" required>
+            <label for="validationCustom02">Фамилия</label>
+            <input type="text" class="form-control" id="validationCustom02" placeholder="Иванов" value="" required>
             <div class="valid-feedback">
-                Looks good!
+            Отлично!
             </div>
         </div>
         <div class="col-md-4 mb-3">
-            <label for="validationCustom02">Second Name</label>
-            <input type="text" class="form-control" id="validationCustom02" placeholder="Second Name" value="Kuvshinov" required>
+            <label for="validationCustom01">Имя</label>
+            <input type="text" class="form-control" id="validationCustom01" placeholder="Иван" value="" required>
             <div class="valid-feedback">
-                Looks good!
+            Отлично!
             </div>
         </div>
         <div class="col-md-4 mb-3">
-            <label for="validationCustom03">Last Name</label>
-            <input type="text" class="form-control" id="validationCustom03" placeholder="Last Name" value="Petrovich" required>
+            <label for="validationCustom03">Отчество</label>
+            <input type="text" class="form-control" id="validationCustom03" placeholder="Иванович" value="" required>
             <div class="valid-feedback">
-                Looks good!
+            Отлично!
             </div>
         </div>
     </div>
     <div class="form-row">
-        <div class="col-md-6 mb-3">
+        <div class="col-md-12 mb-3">
             <label for="validationCustom04">Email</label>
-            <input type="text" class="form-control" id="validationCustom04" placeholder="" value="" required>
+            <input type="text" class="form-control" id="validationCustom04" placeholder="qwerty12345@mail.ru" value="" required>
             <div class="valid-feedback">
-                Looks good!
-            </div>
-        </div>
-        <div class="col-md-6 mb-3">
-            <label for="validationCustom05">Login</label>
-            <input type="text" class="form-control" id="validationCustom05" placeholder="" value="" required>
-            <div class="valid-feedback">
-                Looks good!
+            Отлично!
             </div>
         </div>
     </div>
     <div class="form-row">
         <div class="col-md-6 mb-3">
             <form>
-                <label for="validationCustom06">Password</label>
+                <label for="validationCustom06">Пароль</label>
                 <input type="password" class="form-control" id="password" placeholder=""  required>
                 <div class="valid-feedback">
-                    Looks good!
+                Отлично!
                 </div>
             </form>
         </div>
         <div class="col-md-6 mb-3">
             <form>
-                <label for="validationCustom07">Confirm Password</label>
+                <label for="validationCustom07">Повторите пароль</label>
                 <input type="password" class="form-control" id="confirm_password" placeholder=""  required>
                 <div class="valid-feedback">
-                    Looks good!
+                Отлично!
                 </div>
             </form>
         </div>
-    </div>
-    <div class="form-row">
-        <div class="col-md-6 mb-3">
-            <label for="validationCustom08">Import avatar</label>
-            <input type="file" class=" input_img form-control" id="validationCustom08" placeholder="" value="" required>
-            <div class="valid-feedback">
-                Looks good!
-            </div>
-        </div>
-    </div>
-    <div class="form-group">
-        <form>
-        <input id='email' class="form-control" pattern="[^ @]*@[^ .]*.[a-z]*" placeholder="Enter your email">
-        </form>
-    </div>
-    <button class="btn btn-primary lol" type='submit' id='validate'>Registration</button>
-    <p id='result'></p>
+    </div>  
+    <input type="submit" name="submit" class="btn btn-primary mb-2" value="Регистрация">
 </form>
