@@ -21,6 +21,10 @@ body {
 .login{
     position: relative;
 }
+.reg{
+    margin-right: 30%;
+    margin-left: 30%;
+}
 .form{
     
     background: white;
@@ -54,8 +58,10 @@ body {
 .header{
     background-color: white;
 }
+.icons{
+    cursor: pointer !important;
+}
 .icons img{
-    cursor: pointer;
     height: 50px;
     width: 50px;
 }
@@ -71,8 +77,16 @@ body {
     right: 30%;
     width:auto;
     z-index:100;
-    background: rgba(255, 255, 255, 0.5 );
+    background: rgba(255, 255, 255, 1);
     display:none;
+    border: #28a745 2px solid;
+   }
+   #x{
+    padding-right: 10px;
+    top:0;
+    right: 0;
+    position: absolute;
+    cursor: pointer;
    }
 .slider {
     display: block;
@@ -252,5 +266,5 @@ body {
     color: black;
   }
 .catalog-item-active{
-    color:#007bff !important;
+    color:#28a745 !important;
 }

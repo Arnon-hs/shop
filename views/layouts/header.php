@@ -47,10 +47,10 @@
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Поиск</button>
           </form>
         </nav>
-        <div class="login">
+        <div class="login icons">
           <div id="btn" onclick="showWindow()"><img src="/template/images/product-details/log.png"></div>
           <div id="content_window">
-            <?php include_once(ROOT."/views/login/index.php") ?>
+            <?php include_once(ROOT."/views/login/login.php") ?>
           </div>
         </div>
         <div class="profile icons">

@@ -71,47 +71,28 @@
                         <h1>Рекомендуемые товары </h1>
                 </div>
                 <div class="row mb-4 ">
-                    <div class="item_box col mr-4">
-                        <a href="http://shop/product/1">
-                            <img src="/template/images/product-details/te_guan_in.jpg" >
-                        </a>
-                        <div class="name_product">
-                            <p>Те Гуань Инь</p>
+                <?php foreach ($latestProducts as $product): ?>
+                <!-- сделать ровное количество и слайдер+is_recomented -->
+                        <div class="col-sm-3">
+                            <div class="product-image-wrapper">
+                                <div class="single-products">
+                                    <div class="productinfo text-center">
+                                        <img src="/template/images/product-details/lavazza Rossa.jpg" alt="" />
+                                        <h2><?php echo $product['price'];?>р</h2>
+                                        <p>
+                                            <a href="/product/<?php echo $product['id'];?>">
+                                                <?php echo $product['name'];?>
+                                            </a>
+                                        </p>
+                                        <a href="#" class="btn btn-primary add-to-cart">В корзину</a>
+                                    </div>
+                                    <?php if ($product['is_new']): ?>
+                                        <img src="/template/images/home/new.png" class="new" alt="" />
+                                    <?php endif; ?>
+                                </div>
+                            </div>
                         </div>
-                        
-                    </div> 
-                    <div class="item_box col mr-4">
-                        <a href="http://shop/product/2">
-                            <img src="/template/images/product-details/puer.jpg" >
-                        </a>
-                        <div class="name_product">
-                            <p> Шу Пуэр</p>
-                        </div> 
-                    </div>
-                    <div class="item_box col mr-4">
-                        <a href="http://shop/product/3">
-                            <img src="/template/images/product-details/karkade.jpg" >
-                        </a>
-                        <div class="name_product">
-                                <p>Каркаде</p>
-                        </div>
-                    </div>
-                    <div class="item_box col mr-4">
-                        <a href="http://shop/product/4">
-                            <img src="/template/images/product-details/earl_grey.jpg" >
-                        </a>
-                        <div class="name_product">
-                                <p> Earl gray</p>
-                        </div>
-                    </div>      
-                    <div class="item_box col">
-                        <a href="http://shop/product/5">
-                            <img src="/template/images/product-details/da_hun_pao.jpg" >
-                        </a>
-                        <div class="name_product">
-                            <p> Да хун Пао</p>
-                        </div>
-                    </div>     
+                    <?php endforeach;?>      
                 </div>
             </div>
         </div>

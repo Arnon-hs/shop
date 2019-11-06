@@ -8,9 +8,12 @@ class Product
     /**
      * Returns an array of products
      */
-    public static function getLatestProducts($count = self::SHOW_BY_DEFAULT)
+    public static function getLatestProducts($count = self::SHOW_BY_DEFAULT,$page = 1)
     {
         $count = intval($count);
+        $page = intval($page);
+        $offset = $page * $count;
+
         $db = Db::getConnection();
         $productsList = array();
 
