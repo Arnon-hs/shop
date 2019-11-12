@@ -72,7 +72,8 @@
                 </div>
                 <div class="row mb-4 ">
                 <?php foreach ($latestProducts as $product): ?>
-                <!-- сделать ровное количество и слайдер+is_recomented -->
+                    <?php if($product['is_recommended']): ?>
+                    <!-- сделать ровное количество и слайдер+is_recomented -->
                         <div class="col-sm-3">
                             <div class="product-image-wrapper">
                                 <div class="single-products">
@@ -92,7 +93,8 @@
                                 </div>
                             </div>
                         </div>
-                    <?php endforeach;?>      
+                    <?php endif;?>
+                <?php endforeach;?>      
                 </div>
             </div>
         </div>

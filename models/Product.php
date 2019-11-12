@@ -5,9 +5,6 @@ class Product
 
     const SHOW_BY_DEFAULT = 4;
 
-    /**
-     * Returns an array of products
-     */
     public static function getLatestProducts($count = self::SHOW_BY_DEFAULT,$page = 1)
     {
         $count = intval($count);
@@ -35,9 +32,6 @@ class Product
         return $productsList;
     }
     
-    /**
-     * Returns an array of products
-     */
     public static function getProductsListByCategory($categoryId = false, $page = 1)
     {
         if ($categoryId) {
@@ -67,10 +61,7 @@ class Product
     }
     
     
-    /**
-     * Returns product item by id
-     * @param integer $id
-     */
+    
     public static function getProductById($id)
     {
         $id = intval($id);
@@ -96,21 +87,7 @@ class Product
         return $row['count'];
 
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    /**
-     * Returns an array of recommended products
-     */
+
     public static function getRecommendedProducts()
     {
         $db = Db::getConnection();

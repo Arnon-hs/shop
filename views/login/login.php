@@ -2,7 +2,7 @@
 <form class="needs-validation container mt-3" >
     <div class="form-row">
         <div class="col-md-12 mb-3 text-center">
-            <h5>Войти</h5>
+            <h5>Вход на сайт</h5>
         </div>
         <div class="col-md-12 mb-3">
             <label>E-mail</label>
@@ -16,5 +16,5 @@
         </div>
     </div>
     <button class="btn btn-primary mb-2" type="submit">Войти</button>
-    <a href="user/register" class="ml-3">Регистрация</a>
+    <a href="http://shop/user/register" class="ml-3">Регистрация</a>
 </form>

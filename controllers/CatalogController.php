@@ -1,5 +1,5 @@
 <?php
-
+require_once(ROOT.'/components/Pagination.php');
 class CatalogController
 {
 

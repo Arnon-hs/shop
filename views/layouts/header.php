@@ -26,37 +26,68 @@
 <body>
   <div class="wrapper">
     <header>
-      <div class="about_us container">
-        <div class="menu navbar-nav-scroll row">
-          <ul class="navbar-nav bd-navbar-nav flex-row col-12 col-md-8">
-            <li class="mr-4"><a href="/views/site/about.php">О нас</a></li>
-            <li class="mr-4"><a href="/views/site/oplata.php">Оплата</a></li>
-            <li class="mr-4"><a href="delivery.php">Доставка</a></li>
-            <li class="mr-4"><a href="contact.php">Контакты</a></li>
-          </ul>
-          <div class="number col-6 col-md-4 ">+79258605436</div>
-        </div>
-
-      </div>
-      <hr />
-      <div class="header d-flex justify-content-between pt-2 pb-2 container">
-        <div class="logo "><a href="/"><img src="/template/images/product-details/tea-coffee-logo.png"></a></div>
-        <nav class="navbar nav_search">
-          <form class="form-inline">
-            <input class="form-control mr-sm-2 search" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Поиск</button>
-          </form>
-        </nav>
-        <div class="login icons">
-          <div id="btn" onclick="showWindow()"><img src="/template/images/product-details/log.png"></div>
-          <div id="content_window">
-            <?php include_once(ROOT."/views/login/login.php") ?>
+      <div class="header-top">
+        <div class="about_us container">
+          <div class="menu navbar-nav-scroll row">
+            <ul class="navbar-nav bd-navbar-nav flex-row col-12 col-md-8">
+              <li class="mr-4"><a href="/views/site/about.php">О нас</a></li>
+              <li class="mr-4"><a href="/views/site/oplata.php">Оплата</a></li>
+              <li class="mr-4"><a href="delivery.php">Доставка</a></li>
+              <li class="mr-4"><a href="contact.php">Контакты</a></li>
+            </ul>
+            <div class="number col-6 col-md-4 ">+79258605436</div>
           </div>
         </div>
-        <div class="profile icons">
-          <img src="/template/images/product-details/login.png">
+      </div>
+      <hr />
+      <div class="header-middle">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-2 ml-2">
+              <div class="logo pull-left">
+                <a href="/"><img src="/template/images/product-details/tea-coffee-logo.png"></a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="div-search">
+                <nav class="navbar nav_search">
+                  <form class="form-inline">
+                    <input class="form-control mr-sm-2 search" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Поиск</button>
+                  </form>
+                </nav>
+              </div>
+            </div>
+            <!-- <div class="login icons">
+              <!-- <div id="btn" onclick="showWindow()"><img src="/template/images/product-details/log.png"></div>
+              <div id="content_window">
+                <?php include_once(ROOT."/views/login/login.php") ?>
+              </div> -->
+              <!-- <a href="/user/login/"><img src="/template/images/product-details/log.png" alt="login"></a>
+            </div>
+            <div class="profile icons">
+              <a href="/cabinet/"> 
+                <img src="/template/images/product-details/login.png">
+              </a>
+            </div>
+            <div class="logout"><a href="/user/logout/">Выход</a></div>
+            <div class="cart icons"><a href=""><img src="/template/images/product-details/cart.png"></a></div>
+              -->
+            <div class="col-md-4 mt-2 mr-2">
+              <div class="shop-menu">
+                <ul class="nav navbar-nav float-right">
+                  <li><a href=""><i class="fa"></i>Корзина</a></li> 
+                  <?php if(User::isGuest()): ?>
+                  <li><a href="/user/login/"><i class="fa"></i>Вход</a></li> 
+                  <?php else: ?>
+                  <li><a href="/cabinet/"><i class="fa"></i>Аккаунт</a></li> 
+                  <li><a href="/user/logout/"><i class="fa"></i>Выход</a></li> 
+                  <?php endif ?>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="cart icons"><a href=""><img src="/template/images/product-details/cart.png"></a></div>
       </div>
       <hr />
       <div class="menu_header">
@@ -65,10 +96,11 @@
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
               aria-haspopup="true" aria-expanded="false">Кофе</a>
             <div class="dropdown-menu">
-              <a class="dropdown-item" href="http://shop/catalog">Зерновой</a>
-              <a class="dropdown-item" href="#">Молотый</a>
-              <a class="dropdown-item" href="#">Растворимый</a>
-              <a class="dropdown-item" href="#">В капсулах</a>
+              <a class="dropdown-item" href="/category/1">Зерновой</a>
+              <a class="dropdown-item" href="/category/4">Молотый</a>
+              <a class="dropdown-item" href="/category/2">Растворимый</a>
+              <a class="dropdown-item" href="/category/3">В капсулах</a>
+              <a class="dropdown-item" href="/catalog">Полный каталог</a>
             </div>
           </li>
           <li class="nav-item dropdown">

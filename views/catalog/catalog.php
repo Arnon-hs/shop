@@ -1,6 +1,6 @@
 <?php include ROOT . '/views/layouts/header.php'; ?>
     <div class="container">
-        <div class="crumbs">Главная>>Кофе>>Зерновой</div>
+        
         <div class="row mt-4 mb-4">
             <div class="col-2 category ">
                     <h4>Каталог</h4>
@@ -39,7 +39,8 @@
                     <?php endforeach;?>                   
 
                 </div>
-
+                <!-- Постраничная навигация -->
+                <?php echo $pagination->get(); ?>
 
             </div>
         </div>
