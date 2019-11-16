@@ -1,15 +1,14 @@
 function countPrice(){
-    var  price= document.getElementById("price_product");
-    var price_const=price.innerText;
+    var  priceProduct= document.getElementById("price_product");
     var  kolvo= document.getElementById("example-number-input");
     var  selected= document.getElementById("inlineFormCustomSelect").options.selectedIndex;
     var  ves=document.getElementById("inlineFormCustomSelect").options[selected].value;
-    var b=price_const;
+    var b=price;
     var a=kolvo.value;
     var c=ves;
-    console.log(a,b,c, price_const);
+    console.log(a,b,c);
     var d=a*b*c;
-    price.innerText=d;
+    priceProduct.innerText=d;
 }
 countPrice();
 function showWindow() {

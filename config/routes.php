@@ -12,6 +12,7 @@ return array(
     'user/logout' => 'user/logout',
     'cabinet/edit' => 'cabinet/edit',
     'cabinet' => 'cabinet/index',
+    'contacts' => 'contacts/index',
     '' => 'site/index', // actionIndex в SiteController
     
 );

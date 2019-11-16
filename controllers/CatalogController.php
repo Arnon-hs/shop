@@ -31,5 +31,5 @@ class CatalogController
 
         return true;
     }
-
+    
 }

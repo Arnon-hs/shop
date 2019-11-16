@@ -3,7 +3,7 @@
             <div class="crumbs">Главная>>Товар</div>
             <div class="content_product row">
                 <div class="img_photo col-7 ">
-                    <img src="/template/images/product-details/te_guan_in.jpg">
+                    <img src="/template/images/product-details/lavazza Rossa.jpg">
                 </div>
                 <div class="col-5">
                     <p>Артикул:<?php echo $product['code'];?> </p>
@@ -12,6 +12,9 @@
                         <div class="price col-4">
                             <label for="price_product" class="col-form-label">Цена:</label>
                             <h3 id="price_product" ><?php echo $product['price'];?></h3>
+                            <script>
+                              var price=<?php echo $product['price']; ?>;
+                            </script>
                         </div>
                         <div class="count-product col-3">
                                 <div class="form-group">
@@ -76,7 +79,7 @@
                         </div>    
                         <div class="item_box col">
                                 <a href="/views/site/product/product.php">
-                                    <img src="/template/images/product-details/puer.jpg" >
+                                    <img src="/template/images/product-details/lavazza Rossa.jpg" >
                                 </a>
                                 <div class="name_product">
                                     <p> Шу пуэр</p>
@@ -86,5 +89,5 @@
             </div>
         </div>
     </div>
-    <?php include_once(ROOT."/views/layouts/footer.php"); ?>
+    <!-- <?php include_once(ROOT."/views/layouts/footer.php"); ?> -->
 

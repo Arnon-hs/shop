@@ -33,13 +33,12 @@
               <li class="mr-4"><a href="/views/site/about.php">О нас</a></li>
               <li class="mr-4"><a href="/views/site/oplata.php">Оплата</a></li>
               <li class="mr-4"><a href="delivery.php">Доставка</a></li>
-              <li class="mr-4"><a href="contact.php">Контакты</a></li>
+              <li class="mr-4"><a href="/contacts/">Контакты</a></li>
             </ul>
             <div class="number col-6 col-md-4 ">+79258605436</div>
           </div>
         </div>
       </div>
-      <hr />
       <div class="header-middle">
         <div class="container">
           <div class="row">
@@ -89,7 +88,6 @@
           </div>
         </div>
       </div>
-      <hr />
       <div class="menu_header">
         <ul class="nav nav-tabs nav-fill menu_ul ">
           <li class="nav-item dropdown">
@@ -107,12 +105,13 @@
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
               aria-expanded="false">Чай</a>
             <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Зеленый</a>
-              <a class="dropdown-item" href="#">Черный</a>
-              <a class="dropdown-item" href="#">Фруктовый</a>
-              <a class="dropdown-item" href="#">Пуэр</a>
-              <a class="dropdown-item" href="#">Улун</a>
-              <a class="dropdown-item" href="#">Травяной</a>
+              <a class="dropdown-item" href="/category/5">Зеленый</a>
+              <a class="dropdown-item" href="/category/6">Черный</a>
+              <a class="dropdown-item" href="/category/7">Фруктовый</a>
+              <a class="dropdown-item" href="/category/8">Пуэр</a>
+              <a class="dropdown-item" href="/category/9">Улун</a>
+              <a class="dropdown-item" href="/category/10">Травяной</a>
+              <a class="dropdown-item" href="/catalog">Полный каталог</a>
             </div>
           </li>
           <li class="nav-item dropdown">

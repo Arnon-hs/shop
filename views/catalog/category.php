@@ -5,11 +5,13 @@
             <div class="col-2 category ">
                     <h4>Каталог</h4>
                         <?php foreach ($categories as $categoryItem): ?>
+                            <?php if($categoryItem['groups']==2): ?>
                                     <h5 class="catalog-item">
                                         <a href="/category/<?php echo $categoryItem['id'];?>" class="<?php if($categoryId == $categoryItem['id']) echo 'catalog-item-active'; ?>">
                                             <?php echo $categoryItem['name'];?>
                                         </a>
                                     </h5>
+                            <?php endif; ?>
                         <?php endforeach; ?>
             </div>
 
@@ -46,4 +48,4 @@
         </div>
     </div>
 
-<?php include ROOT . '/views/layouts/footer.php'; ?>
+<!-- <?php include ROOT . '/views/layouts/footer.php'; ?> -->

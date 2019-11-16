@@ -46,4 +46,4 @@
         </div>
     </div>
 
-<?php include ROOT . '/views/layouts/footer.php'; ?>
+<!-- <?php include ROOT . '/views/layouts/footer.php'; ?> -->
