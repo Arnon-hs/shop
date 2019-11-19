@@ -90,25 +90,68 @@ class Product
 
     public static function getRecommendedProducts()
     {
+        // Соединение с БД
         $db = Db::getConnection();
 
-        $productsList = array();
-
-        $result = $db->query('SELECT id, name, price, image, is_new FROM product '
-                . 'WHERE status = "1" AND is_recommended = "1"'
-                . 'ORDER BY id DESC ');
-
+        // Получение и возврат результатов
+        $result = $db->query('SELECT id, name, price, is_new FROM product '
+                . 'WHERE status = "1" AND is_recommended = "1" '
+                . 'ORDER BY id DESC');
         $i = 0;
+        $productsList = array();
         while ($row = $result->fetch()) {
             $productsList[$i]['id'] = $row['id'];
             $productsList[$i]['name'] = $row['name'];
-            $productsList[$i]['image'] = $row['image'];
             $productsList[$i]['price'] = $row['price'];
             $productsList[$i]['is_new'] = $row['is_new'];
             $i++;
         }
-
         return $productsList;
+    }
+
+    public static function getProductsByIds($idsArray)
+    {
+        $products = array();
+        
+        $db = Db::getConnection();
+        
+        $idsString = implode(',', $idsArray);
+
+        $sql = "SELECT * FROM product WHERE status='1' AND id IN ($idsString)";
+
+        $result = $db->query($sql);        
+        $result->setFetchMode(PDO::FETCH_ASSOC);
+        
+        $i = 0;
+        while ($row = $result->fetch()) {
+            $products[$i]['id'] = $row['id'];
+            $products[$i]['code'] = $row['code'];
+            $products[$i]['name'] = $row['name'];
+            $products[$i]['price'] = $row['price'];
+            $i++;
+        }
+
+        return $products;
+    }
+    public static function getImage($id)
+    {
+        // Название изображения-пустышки
+        $noImage = 'no-photo.png';
+
+        // Путь к папке с товарами
+        $path = '/template/images/products/';
+
+        // Путь к изображению товара
+        $pathToProductImage = $path . $id . '.jpg';
+
+        if (file_exists($_SERVER['DOCUMENT_ROOT'].$pathToProductImage)) {
+            // Если изображение для товара существует
+            // Возвращаем путь изображения товара
+            return $pathToProductImage;
+        }
+
+        // Возвращаем путь изображения-пустышки
+        return $path . $noImage;
     }
 
 }

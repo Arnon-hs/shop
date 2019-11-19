@@ -10,15 +10,14 @@ function countPrice(){
     var d=a*b*c;
     priceProduct.innerText=d;
 }
-countPrice();
-function showWindow() {
-    var el = document.getElementById("content_window");
-    // var el1 = document.getElementsByClassName("login");
-    // el1.style.position='absolute';
-    el.style.display = 'block';
-    el.style.zIndex='1000';
-}
-function closeWindow(){
-    var el = document.getElementById("content_window");
-    el.style.display='none';
-}
+// function showWindow() {
+//     var el = document.getElementById("content_window");
+//     // var el1 = document.getElementsByClassName("login");
+//     // el1.style.position='absolute';
+//     el.style.display = 'block';
+//     el.style.zIndex='1000';
+// }
+// function closeWindow(){
+//     var el = document.getElementById("content_window");
+//     el.style.display='none';
+// }

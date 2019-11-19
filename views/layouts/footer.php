@@ -1,9 +1,10 @@
     <footer>
-        <div class="footer mt-4">
+        <div class="footer ">
             <p>Футер</p>
         </div>
     </footer>
 </div>
+
 </body>
 
 </html>

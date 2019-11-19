@@ -1,9 +1,8 @@
 <?php include ROOT . '/views/layouts/header.php'; ?>
-    <div class="wrapper container">
-            <div class="crumbs">Главная>>Товар</div>
+    <div class="container mt-4">
             <div class="content_product row">
                 <div class="img_photo col-7 ">
-                    <img src="/template/images/product-details/lavazza Rossa.jpg">
+                    <img src="<?php echo Product::getImage($product['id']); ?>">
                 </div>
                 <div class="col-5">
                     <p>Артикул:<?php echo $product['code'];?> </p>
@@ -35,8 +34,10 @@
                                 </form>
                         </div>
                     </div>
-                    <div class="row ">
-                        <button type="button" class="btn btn-primary col-5 ml-4 mt-2">В корзину</button>
+                    <div class="row">
+                        <a href="/cart/add/<?php echo $product['id']; ?>" class="col-6 mt-2">
+                        <button type="button" class="btn btn-primary" style="width:100%;">В корзину</button></a>
+                        <!-- как добавлять несколько товаров? -->
                     </div>
                     <hr />
                     <div class="delivery">Доставка осуществляется в течении 3 дней курьерской службой</div>

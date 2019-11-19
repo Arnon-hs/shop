@@ -21,14 +21,14 @@
                             <div class="product-image-wrapper">
                                 <div class="single-products">
                                     <div class="productinfo text-center">
-                                        <img src="/template/images/product-details/lavazza Rossa.jpg" alt="" />
+                                        <img src="<?php echo Product::getImage($product['id']); ?>" alt="" />
                                         <h2><?php echo $product['price'];?>р</h2>
                                         <p>
                                             <a href="/product/<?php echo $product['id'];?>">
                                                 <?php echo $product['name'];?>
                                             </a>
                                         </p>
-                                        <a href="#" class="btn btn-primary add-to-cart">В корзину</a>
+                                        <a href="/cart/add/<?php echo $product['id']; ?>" data-id="<?php echo $product['id']; ?>" class="btn btn-primary add-to-cart">В корзину</a>
                                     </div>
                                     <?php if ($product['is_new']): ?>
                                         <img src="/template/images/home/new.png" class="new" alt="" />
@@ -46,4 +46,4 @@
         </div>
     </div>
 
-<!-- <?php include ROOT . '/views/layouts/footer.php'; ?> -->
+<?php include ROOT . '/views/layouts/footer.php'; ?>

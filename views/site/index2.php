@@ -67,34 +67,47 @@
                 </div>
             </div>
             <div class="recomend_Items mt-4 mb-2 container">
-                <div class="h1_items">  
-                        <h1>Рекомендуемые товары </h1>
-                </div>
-                <div class="row mb-4 ">
-                <?php foreach ($latestProducts as $product): ?>
-                    <?php if($product['is_recommended']): ?>
-                    <!-- сделать ровное количество и слайдер+is_recomented -->
-                        <div class="col-sm-3">
-                            <div class="product-image-wrapper">
-                                <div class="single-products">
-                                    <div class="productinfo text-center">
-                                        <img src="/template/images/product-details/lavazza Rossa.jpg" alt="" />
-                                        <h2><?php echo $product['price'];?>р</h2>
-                                        <p>
-                                            <a href="/product/<?php echo $product['id'];?>">
-                                                <?php echo $product['name'];?>
+                    <h2 class="title text-center">Рекомендуемые товары</h2>
+                    
+                    <div class="cycle-slideshow row" 
+                         data-cycle-fx=carousel
+                         data-cycle-timeout=5000
+                         data-cycle-carousel-visible=3
+                         data-cycle-carousel-fluid=true
+                         data-cycle-slides="div.item"
+                         data-cycle-prev="#prev"
+                         data-cycle-next="#next"
+                         >                        
+                             <?php foreach ($sliderProducts as $sliderItem): ?>
+                            <div class="item col-3">
+                                <div class="product-image-wrapper">
+                                    <div class="single-products">
+                                        <div class="productinfo text-center">
+                                            <a href="/product/<?php echo $sliderItem['id'];?>">
+                                                <img src="<?php echo Product::getImage($sliderItem['id']); ?>" alt="" />
+                                                <h2><?php echo $sliderItem['price'];?>р</h2>
+                                                <p>
+                                                    <?php echo $sliderItem['name'];?>
+                                                </p>
                                             </a>
-                                        </p>
-                                        <a href="#" class="btn btn-primary add-to-cart">В корзину</a>
+                                            <a href="/cart/add/<?php echo $sliderItem['id']; ?>" data-id="<?php echo $sliderItem['id']; ?>" class="btn btn-primary add-to-cart">В корзину</a>
+                                        </div>
+                                        <?php if ($sliderItem['is_new']): ?>
+                                            <img src="/template/images/home/new.png" class="new" alt="" />
+                                        <?php endif; ?>
                                     </div>
-                                    <?php if ($product['is_new']): ?>
-                                        <img src="/template/images/home/new.png" class="new" alt="" />
-                                    <?php endif; ?>
                                 </div>
                             </div>
-                        </div>
-                    <?php endif;?>
-                <?php endforeach;?>      
+                        <?php endforeach; ?>
+                    </div>
+
+                    <a class="left recommended-item-control" id="prev" href="#recommended-item-carousel" data-slide="prev">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a class="right recommended-item-control" id="next"  href="#recommended-item-carousel" data-slide="next">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+
                 </div>
             </div>
         </div>
