@@ -12,9 +12,15 @@ class SiteController
         $latestProducts = Product::getLatestProducts(6);
         
         $sliderProducts = Product::getRecommendedProducts();
-        require_once(ROOT . '/views/site/index2.php');//
+        
+        require_once(ROOT . '/views/site/index.php');//
 
         return true;
     }
-
+    public function actionAbout()
+    {
+        // Подключаем вид
+        require_once(ROOT . '/views/info/about.php');
+        return true;
+    }
 }

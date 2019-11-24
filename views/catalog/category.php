@@ -30,7 +30,7 @@
                                                 <?php echo $product['name'];?>
                                             </a>
                                         </p>
-                                        <a href="/cart/add/<?php echo $product['id']; ?>" data-id="<?php echo $product['id']; ?>" class="btn btn-primary add-to-cart">В корзину</a>
+                                        <a href="/cart/add/<?php echo $product['id']; ?>/1" data-id="<?php echo $product['id']; ?>" class="btn btn-primary add-to-cart">В корзину</a>
                                     </div>
                                     <?php if ($product['is_new']): ?>
                                         <img src="/template/images/home/new.png" class="new" alt="" />

@@ -12,7 +12,7 @@ class ProductController
     
     public function actionView($productId)
     {
-
+        $sliderProducts = Product::getRecommendedProducts();
         $categories = array();
         $categories = Category::getCategoriesList();
         

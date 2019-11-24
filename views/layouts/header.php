@@ -5,16 +5,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script
+  <!-- <script
 			  src="https://code.jquery.com/jquery-3.4.1.js"
 			  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-			  crossorigin="anonymous"></script>
+			  crossorigin="anonymous"></script> -->
+  
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+    <!-- include Cycle2 -->
+  <script src="/template/js/jquery.cycle2.js"></script>
+
+  <!-- include one or more optional Cycle2 plugins -->
+  <script src="/template/js/jquery.cycle2.carousel.js"></script>
   <!-- <link rel="stylesheet" href="/template/css/main.css"> -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="/template/css/style.css">
@@ -31,9 +38,9 @@
         <div class="about_us container">
           <div class="menu navbar-nav-scroll row">
             <ul class="navbar-nav bd-navbar-nav flex-row col-12 col-md-8">
-              <li class="mr-4"><a href="/views/site/about.php">О нас</a></li>
-              <li class="mr-4"><a href="/views/site/oplata.php">Оплата</a></li>
-              <li class="mr-4"><a href="delivery.php">Доставка</a></li>
+              <li class="mr-4"><a href="/about/">О нас</a></li>
+              <li class="mr-4"><a href="/about/">Оплата</a></li>
+              <li class="mr-4"><a href="/about/">Доставка</a></li>
               <li class="mr-4"><a href="/contacts/">Контакты</a></li>
             </ul>
             <div class="number col-6 col-md-4 ">+79258605436</div>

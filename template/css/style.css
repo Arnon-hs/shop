@@ -115,7 +115,14 @@ body {
 .tea_box{
     height: 300px;
     background-color: green;
+    border-right: 10px solid white;
     /* right: 20px; */
+}
+.admin_ul li{
+    list-style-type: none ;
+}
+.breadcrumb a{
+    margin-right: 1rem;
 }
 .aks_box{
     height: 300px;
@@ -124,6 +131,7 @@ body {
 .sladkoe_box{
     height: 300px;
     background-color: plum;
+    border-right: 10px solid white;
     /* right: 20px; */
 }
 .coffee_box{
@@ -166,9 +174,19 @@ body {
 /* .last{
     right: 0 !important;
 } */
-
+.img_photo img{
+    width: 100%;
+    height: auto;
+    transition: 1s;
+}
 .img_photo{
-    text-align: center;
+    
+    overflow:hidden;
+	display:inline-block;
+	position:relative;
+}
+.img_photo img:hover{
+    transform: scale(1.1);
 }
 .dropdown-menu{
     width: 100%;

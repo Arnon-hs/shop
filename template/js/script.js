@@ -1,15 +1,20 @@
 function countPrice(){
     var  priceProduct= document.getElementById("price_product");
     var  kolvo= document.getElementById("example-number-input");
-    var  selected= document.getElementById("inlineFormCustomSelect").options.selectedIndex;
-    var  ves=document.getElementById("inlineFormCustomSelect").options[selected].value;
     var b=price;
     var a=kolvo.value;
-    var c=ves;
-    console.log(a,b,c);
-    var d=a*b*c;
+    var d=a*b;
     priceProduct.innerText=d;
 }
+// function addhref(){
+
+//     var kolvo= document.getElementById("example-number-input").value;
+//     var add = document.getElementById("buttonAdd");
+//     console.log(href);
+//     href+=kolvo;
+//     console.log(href);
+//     add.href=href;
+// }
 // function showWindow() {
 //     var el = document.getElementById("content_window");
 //     // var el1 = document.getElementsByClassName("login");
