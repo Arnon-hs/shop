@@ -41,17 +41,9 @@
         </div>
     
     
-        <!-- <div class="col-md-12 mb-3">
-            <label >Email</label>
-            <input type="text" class="form-control" placeholder="qwerty12345@mail.ru" value="" name="email">
-            
-        </div>  -->
-    
-    
         <div class="col-md-12 mb-3">
                 <label>Пароль</label>
-                <input type="password" class="form-control" value="<?php echo $password;?>" name="password">
-                
+                <input type="password" class="form-control" value="" name="password">
         </div>
         
     <input type="submit" name="submit" class="btn btn-primary mb-2 ml-3" value="Сохранить">

@@ -17,6 +17,7 @@ return array(
     'user/register' => 'user/register',
     'user/login' => 'user/login',
     'user/logout' => 'user/logout',
+    'user/history' => 'user/history',
     'cabinet/edit' => 'cabinet/edit',
     'cabinet' => 'cabinet/index',
     // Управление товарами:    

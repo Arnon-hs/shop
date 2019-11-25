@@ -37,7 +37,7 @@
                         </div> -->
                     </div>
                     <div class="row">
-                        <a id="buttonAdd" href="/cart/add/<?php echo $product['id']; ?>/" class="col-6 mt-2">
+                        <a id="buttonAdd" href="/cart/add/<?php echo $product['id']; ?>/1" class="col-6 mt-2">
                             <button type="button" class="btn btn-primary" style="width:100%;">В корзину</button>
                         </a>
                     </div>

@@ -26,7 +26,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="/template/css/style.css">
   <link rel="shortcut icon" href="/template/images/product-details/tea-coffee-logo.png" type="image/png">
-  <title>SHOP</title>
+  <title>Интернет магазин</title>
 
   <script src="/template/js/script.js"></script>
 </head>
@@ -34,16 +34,16 @@
 <body>
   <div class="wrapper">
     <header>
-      <div class="header-top">
+      <div class="header-top mt-2">
         <div class="about_us container">
           <div class="menu navbar-nav-scroll row">
-            <ul class="navbar-nav bd-navbar-nav flex-row col-12 col-md-8">
-              <li class="mr-4"><a href="/about/">О нас</a></li>
-              <li class="mr-4"><a href="/about/">Оплата</a></li>
-              <li class="mr-4"><a href="/about/">Доставка</a></li>
-              <li class="mr-4"><a href="/contacts/">Контакты</a></li>
+            <ul class="navbar-nav bd-navbar-nav flex-row col-12 col-md-8 h_m">
+              <li class="mr-4"><a href="/about/"><img src="/template/images/icons/icons8-about-50.png">О нас</a></li>
+              <li class="mr-4"><a href="/about/"><img src="/template/images/icons/icons8-wallet-50.png">Оплата</a></li>
+              <li class="mr-4"><a href="/about/"><img src="/template/images/icons/icons8-delivery-50.png"> Доставка</a></li>
+              <li class="mr-4"><a href="/contacts/"><img src="/template/images/icons/icons8-contact-us-50.png"> Контакты</a></li>
             </ul>
-            <div class="number col-6 col-md-4 ">+79258605436</div>
+            <div class="number h_m col-6 col-md-4 ">+79258605436<img src="/template/images/icons/icons8-phone-50.png"> </div>
           </div>
         </div>
       </div>
@@ -65,33 +65,20 @@
                 </nav>
               </div>
             </div>
-            <!-- <div class="login icons">
-              <!-- <div id="btn" onclick="showWindow()"><img src="/template/images/product-details/log.png"></div>
-              <div id="content_window">
-                <?php include_once(ROOT."/views/login/login.php") ?>
-              </div> -->
-              <!-- <a href="/user/login/"><img src="/template/images/product-details/log.png" alt="login"></a>
-            </div>
-            <div class="profile icons">
-              <a href="/cabinet/"> 
-                <img src="/template/images/product-details/login.png">
-              </a>
-            </div>
-            <div class="logout"><a href="/user/logout/">Выход</a></div>
-            <div class="cart icons"><a href=""><img src="/template/images/product-details/cart.png"></a></div>
-              -->
+          
             <div class="col-md-4 mt-2 mr-2">
               <div class="shop-menu">
-                <ul class="nav navbar-nav float-right">
-                  <li><a href="/cart/"><i class="fa"></i>
+                <ul class="nav navbar-nav float-right h_m">
+                  <li><a href="/cart/">
+                    <img src="/template/images/icons/icons8-shopping-cart-50.png">
                     Корзина
                       (<span id="cart-count"><?php echo Cart::countItems();?></span>)
                     </a></li> 
                   <?php if(User::isGuest()): ?>
-                  <li><a href="/user/login/"><i class="fa"></i>Вход</a></li> 
+                  <li><a href="/user/login/"><img src="/template/images/icons/icons8-login-50.png"> Вход</a></li> 
                   <?php else: ?>
-                  <li><a href="/cabinet/"><i class="fa"></i>Аккаунт</a></li> 
-                  <li><a href="/user/logout/"><i class="fa"></i>Выход</a></li> 
+                  <li><a href="/cabinet/"><img src="/template/images/icons/icons8-account-50.png"> Аккаунт</a></li> 
+                  <li><a href="/user/logout/"><img src="/template/images/icons/icons8-login-rounded-50.png"> Выход</a></li> 
                   <?php endif ?>
                 </ul>
               </div>

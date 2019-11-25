@@ -40,8 +40,8 @@
                                     <td><?php echo $productsInCart[$product['id']];?></td> 
                                     <td><?php echo $product['price'];?></td>    
                                     <td>
-                                        <a class="btn btn-default checkout" href="/cart/delete/<?php echo $product['id'];?>">
-                                            <i class="fa fa-times">X</i>
+                                        <a class="btn btn-default checkout h_m" href="/cart/delete/<?php echo $product['id'];?>">
+                                            <img src="/template/images/icons/icons8-delete-50.png">
                                         </a>
                                     </td>                    
                                 </tr>
@@ -52,11 +52,11 @@
                                 </tr>
                             
                         </table>
-                        <a class="btn btn-default checkout" href="/cart/checkout"><i class="fa fa-shopping-cart"></i> Оформить заказ</a>
+                        <a class="btn btn-primary checkout h_m" href="/cart/checkout"><img src="/template/images/icons/icons8-purchase-order-50.png"> Оформить заказ</a>
                     <?php else: ?>
                         <p>Корзина пуста</p>
                         
-                        <a class="btn btn-default checkout" href="/"><i class="fa fa-shopping-cart"></i> Вернуться к покупкам</a>
+                        <a class="btn btn-primary checkout" href="/"><i class="fa fa-shopping-cart"></i> Вернуться к покупкам</a>
                     <?php endif; ?>
 
                 </div>

@@ -4,8 +4,6 @@
     <div class="container">
         <div class="row">
 
-            <br/>
-
             <div class="breadcrumbs">
                 <ol class="breadcrumb">
                     <li><a href="/admin">Админпанель</a></li>
@@ -93,9 +91,7 @@
 
                        
 
-                        <input type="submit" name="submit" class="btn btn-primary mb-10" value="Сохранить">
-
-                    
+                        <input type="submit" name="submit" class="btn btn-primary mb-4" value="Сохранить">
 
                     </form>
                 </div>

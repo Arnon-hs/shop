@@ -27,11 +27,12 @@ class Order
         $db = Db::getConnection();
 
         // Получение и возврат результатов
-        $result = $db->query('SELECT id, user_name, user_phone, date, status FROM product_order ORDER BY id DESC');
+        $result = $db->query('SELECT id, user_comment, user_name, user_phone, date, status FROM product_order ORDER BY id DESC');
         $ordersList = array();
         $i = 0;
         while ($row = $result->fetch()) {
             $ordersList[$i]['id'] = $row['id'];
+            $ordersList[$i]['user_comment'] = $row['user_comment'];
             $ordersList[$i]['user_name'] = $row['user_name'];
             $ordersList[$i]['user_phone'] = $row['user_phone'];
             $ordersList[$i]['date'] = $row['date'];
@@ -41,7 +42,30 @@ class Order
         return $ordersList;
     }
 
+    public static function getOrdersListById($id)
+    {
+        // Соединение с БД
+        $db = Db::getConnection();
 
+        // Получение и возврат результатов
+        
+        $result = $db->query('SELECT id, user_comment,products, user_name, user_phone, date, status FROM product_order WHERE user_id='.$id);
+        
+        $ordersList = array();
+        
+        $i = 0;
+        while ($row = $result->fetch()) {
+            $ordersList[$i]['id'] = $row['id'];
+            $ordersList[$i]['user_comment'] = $row['user_comment'];
+            $ordersList[$i]['products'] = $row['products'];
+            $ordersList[$i]['user_name'] = $row['user_name'];
+            $ordersList[$i]['user_phone'] = $row['user_phone'];
+            $ordersList[$i]['date'] = $row['date'];
+            $ordersList[$i]['status'] = $row['status'];
+            $i++;
+        }
+        return $ordersList;
+    }
     public static function getStatusText($status)
     {
         switch ($status) {

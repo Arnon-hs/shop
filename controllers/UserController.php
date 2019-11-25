@@ -92,4 +92,28 @@ class UserController
         unset($_SESSION["user"]);//удаление пользователя из сессии если он был
         header("Location: /");
     }
+    public function actionHistory()
+    {
+        $userId= User::checkLogged();
+        
+        // Получаем данные о конкретном заказе
+        $ordersList=array();
+        $ordersList = Order::getOrdersListById($userId);
+        for($i=0;$i<count($ordersList);$i++){
+            // print_r($ordersList[$i]);
+            // echo '<br />';
+            // Получаем массив с идентификаторами и количеством товаров
+            $productsQuantity = json_decode($ordersList[$i]['products'], true);
+
+            // Получаем массив с индентификаторами товаров
+            $productsIds = array_keys($productsQuantity);
+
+            // Получаем список товаров в заказе
+            $products = Product::getProductsByIds($productsIds);
+            // print_r($products);
+            // echo '<br />';
+        }
+        require_once(ROOT.'/views/cabinet/history.php');
+        return true;
+    }
 }

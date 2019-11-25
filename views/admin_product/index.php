@@ -20,7 +20,7 @@
                 <h4>Список товаров</h4>
             </div>
             
-            <table class="table-bordered table-striped table">
+            <table class="table-bordered table-striped table h_m">
                 <tr>
                     <th>ID товара</th>
                     <th>Артикул</th>
@@ -35,8 +35,8 @@
                         <td><?php echo $product['code']; ?></td>
                         <td><?php echo $product['name']; ?></td>
                         <td><?php echo $product['price']; ?></td>  
-                        <td><a href="/admin/product/update/<?php echo $product['id']; ?>" title="Редактировать"><i class="fa fa-pencil-square-o"></i>P</a></td>
-                        <td><a href="/admin/product/delete/<?php echo $product['id']; ?>" title="Удалить"><i class="fa fa-times"></i>X</a></td>
+                        <td><a href="/admin/product/update/<?php echo $product['id']; ?>" title="Редактировать"><img src="/template/images/icons/icons8-edit-50.png"> </a></td>
+                        <td><a href="/admin/product/delete/<?php echo $product['id']; ?>" title="Удалить"><img src="/template/images/icons/icons8-delete-50.png"> </a></td>
                     </tr>
                 <?php endforeach; ?>
             </table>

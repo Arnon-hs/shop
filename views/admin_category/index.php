@@ -20,7 +20,7 @@
                 <h4>Список категорий</h4>
             </div>
 
-            <table class="table-bordered table-striped table">
+            <table class="table-bordered table-striped table h_m">
                 <tr>
                     <th>ID категории</th>
                     <th>Название категории</th>
@@ -35,8 +35,8 @@
                         <td><?php echo $category['name']; ?></td>
                         <td><?php echo $category['sort_order']; ?></td>
                         <td><?php echo Category::getStatusText($category['status']); ?></td>  
-                        <td><a href="/admin/category/update/<?php echo $category['id']; ?>" title="Редактировать"><i class="fa fa-pencil-square-o"></i>P</a></td>
-                        <td><a href="/admin/category/delete/<?php echo $category['id']; ?>" title="Удалить"><i class="fa fa-times"></i>X</a></td>
+                        <td><a href="/admin/category/update/<?php echo $category['id']; ?>" title="Редактировать"><img src="/template/images/icons/icons8-edit-50.png"></a></td>
+                        <td><a href="/admin/category/delete/<?php echo $category['id']; ?>" title="Удалить"><img src="/template/images/icons/icons8-delete-50.png"></a></td>
                     </tr>
                 <?php endforeach; ?>
             </table>
@@ -45,5 +45,5 @@
     </div>
 </section>
 
-<?php include ROOT . '/views/layouts/footer_admin.php'; ?>
+<!-- <?php include ROOT . '/views/layouts/footer_admin.php'; ?> -->
 

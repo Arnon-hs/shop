@@ -10,13 +10,13 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img class="d-block w-100" src="/template/images/slider/6.jpg" alt="Первый слайд">
+                        <img class="d-block w-100" src="/template/images/slider/9.jpeg" alt="Первый слайд">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="/template/images/slider/7.jpg" alt="Второй слайд">
+                        <img class="d-block w-100" src="/template/images/slider/10.jpg" alt="Второй слайд">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="/template/images/slider/8.jpg" alt="Третий слайд">
+                        <img class="d-block w-100" src="/template/images/slider/11.jpg" alt="Третий слайд">
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -102,11 +102,11 @@
                             <?php endforeach; ?>
                     </div>
 
-                    <a class="left recommended-item-control" id="prev" href="#recommended-item-carousel" data-slide="prev">
-                        <i class="fa fa-angle-left"><</i>
+                    <a class="left recommended-item-control h_m" id="prev" href="#recommended-item-carousel" data-slide="prev">
+                        <img src="/template/images/icons/icons8-back-32.png">
                     </a>
-                    <a class="right recommended-item-control" id="next"  href="#recommended-item-carousel" data-slide="next">
-                        <i class="fa fa-angle-right">></i>
+                    <a class="right recommended-item-control h_m" id="next"  href="#recommended-item-carousel" data-slide="next">
+                            <img src="/template/images/icons/icons8-forward-32.png">
                     </a>
 
                 </div>

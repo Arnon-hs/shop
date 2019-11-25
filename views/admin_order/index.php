@@ -16,7 +16,7 @@
             
 
             
-            <table class="table-bordered table-striped table">
+            <table class="table-bordered table-striped table h_m">
                 <tr>
                     <th>ID заказа</th>
                     <th>Имя покупателя</th>
@@ -38,9 +38,9 @@
                         <td><?php echo $order['user_phone']; ?></td>
                         <td><?php echo $order['date']; ?></td>
                         <td><?php echo Order::getStatusText($order['status']); ?></td>    
-                        <td><a href="/admin/order/view/<?php echo $order['id']; ?>" title="Смотреть"><i class="fa fa-eye"></i>V</a></td>
-                        <td><a href="/admin/order/update/<?php echo $order['id']; ?>" title="Редактировать"><i class="fa fa-pencil-square-o"></i>P</a></td>
-                        <td><a href="/admin/order/delete/<?php echo $order['id']; ?>" title="Удалить"><i class="fa fa-times"></i>X</a></td>
+                        <td><a href="/admin/order/view/<?php echo $order['id']; ?>" title="Смотреть"><img src="/template/images/icons/icons8-view-32.png"> </a></td>
+                        <td><a href="/admin/order/update/<?php echo $order['id']; ?>" title="Редактировать"><img src="/template/images/icons/icons8-edit-50.png"> </a></td>
+                        <td><a href="/admin/order/delete/<?php echo $order['id']; ?>" title="Удалить"><img src="/template/images/icons/icons8-delete-50.png"> </a></td>
                     </tr>
                 <?php endforeach; ?>
             </table>

@@ -79,9 +79,9 @@
                     $sum=$sum+($product['price']*$productsQuantity[$product['id']])?>
                 <?php endforeach; ?>
                 <tr>
-                                    <td colspan="3">Общая стоимость:</td>
-                                    <td><?php echo $sum?>р</td>
-                                </tr>
+                    <td colspan="3">Общая стоимость:</td>
+                    <td><?php echo $sum?>р</td>
+                </tr>
             </table>
 
             <a href="/admin/order/"><input type="button" class="btn btn-primary mb-2" value="Назад"><i class="fa fa-arrow-left"></i></a>
