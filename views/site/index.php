@@ -1,5 +1,5 @@
 <?php include ROOT . '/views/layouts/header.php'; ?>
-<div class="wrapper">
+<div class="wrapper mt-4">
     <div class="main">
         <div class="container slider mx-auto">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">

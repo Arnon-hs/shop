@@ -25,14 +25,34 @@
   <!-- <link rel="stylesheet" href="/template/css/main.css"> -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="/template/css/style.css">
-  <link rel="shortcut icon" href="/template/images/shop/logo.jpg" type="image/png">
+  <link rel="shortcut icon" href="/template/images/shop/logo.jpg" type="image/jpg">
   <title>Интернет магазин</title>
 
   <script src="/template/js/script.js"></script>
+  <script>
+      window.onload = function () {
+        document.body.classList.add('loaded_hiding');
+        window.setTimeout(function () {
+          document.body.classList.add('loaded');
+          document.body.classList.remove('loaded_hiding');
+        }, 500);
+      }
+    </script>
 </head>
 
 <body>
-  <div class="wrapper">
+    <div class="preloader">
+        <svg class="preloader__image" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+          <path fill="currentColor"
+            d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
+          </path>
+        </svg>
+      </div>
+
+
+
+
+  <div class="wrapper pb-4">
     <header>
       <div class="header-top mt-2">
         <div class="about_us container">
@@ -90,56 +110,52 @@
         <ul class="nav nav-tabs nav-fill menu_ul ">
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
-              aria-haspopup="true" aria-expanded="false">Кофе</a>
+              aria-haspopup="true" aria-expanded="false">Цветы</a>
             <div class="dropdown-menu">
-              <a class="dropdown-item" href="/category/1">Зерновой</a>
-              <a class="dropdown-item" href="/category/4">Молотый</a>
-              <a class="dropdown-item" href="/category/2">Растворимый</a>
-              <a class="dropdown-item" href="/category/3">В капсулах</a>
+              <a class="dropdown-item" href="/category/11">Розы</a>
+              <a class="dropdown-item" href="/category/12">Хризантемы</a>
+              <a class="dropdown-item" href="/category/13">Орхидеи</a>
+              <a class="dropdown-item" href="/category/14">Ромашки</a>
               <a class="dropdown-item" href="/catalog">Полный каталог</a>
             </div>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-              aria-expanded="false">Чай</a>
+              aria-expanded="false">Букеты и композиции</a>
             <div class="dropdown-menu">
-              <a class="dropdown-item" href="/category/5">Зеленый</a>
-              <a class="dropdown-item" href="/category/6">Черный</a>
-              <a class="dropdown-item" href="/category/7">Фруктовый</a>
-              <a class="dropdown-item" href="/category/8">Пуэр</a>
-              <a class="dropdown-item" href="/category/9">Улун</a>
-              <a class="dropdown-item" href="/category/10">Травяной</a>
+              <a class="dropdown-item" href="/category/15">На праздник</a>
+              <a class="dropdown-item" href="/category/16">По особому поводу</a>
+              <a class="dropdown-item" href="/category/17">Букеты из конфет</a>
               <a class="dropdown-item" href="/catalog">Полный каталог</a>
             </div>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-              aria-expanded="false">Сладкое</a>
+              aria-expanded="false">Горшочные растения</a>
             <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Сиропы</a>
-              <a class="dropdown-item" href="#">Приправы</a>
-              <a class="dropdown-item" href="#">Сахар</a>
-              <a class="dropdown-item" href="#">Топпинги</a>
+              <a class="dropdown-item" href="/category/19">В подарок</a>
+              <a class="dropdown-item" href="/category/20">Комнатные</a>
+              <a class="dropdown-item" href="/category/21">Сезонные</a>
+              <a class="dropdown-item" href="/catalog">Полный каталог</a>
             </div>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-              aria-expanded="false">Аксессуары </a>
+              aria-expanded="false">Сопутствующие товары </a>
             <div class="dropdown-menu">
-              <h5>Для чая</h5>
-              <a class="dropdown-item" href="#">Аксессуары для чайной церемонии</a>
-              <a class="dropdown-item" href="#">Чайный сервиз</a>
-              <a class="dropdown-item" href="#">Банки для хранения</a>
-              <a class="dropdown-item" href="#">Чайники</a>
+              <h5>Сладкое</h5>
+              <a class="dropdown-item" href="/category/22">Шоколадки</a>
+              <a class="dropdown-item" href="/category/23">Конфеты</a>
               <div class="dropdown-divider"></div>
-              <h5>Для кофе</h5>
-              <a class="dropdown-item" href="#">Турки</a>
-              <a class="dropdown-item" href="#">Кофемолки</a>
-              <a class="dropdown-item" href="#">Кофемашины</a>
+              <h5>Игрушки</h5>
+              <a class="dropdown-item" href="/category/24">Плюшевые</a>
+              <a class="dropdown-item" href="/category/25">Сувениры</a>
               <div class="dropdown-divider"></div>
-              <h5>Общее</h5>
-              <a class="dropdown-item" href="#">Термосы</a>
-              <a class="dropdown-item" href="#">Френч-прессы</a>
+              <h5>Открытки</h5>
+              <a class="dropdown-item" href="/category/26">Ручной работы</a>
+              <a class="dropdown-item" href="/category/27">Оригинальные</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/catalog">Полный каталог</a>
             </div>
           </li>
         </ul>

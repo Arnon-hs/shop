@@ -8,6 +8,8 @@ class CatalogController
         $categories = array();
         $categories = Category::getCategoriesList();
 
+        $group= Category::getCategoriesCase($categories);
+        print_r($group);
         $latestProducts = array();
         $latestProducts = Product::getLatestProducts(12);
         require_once(ROOT . '/views/catalog/catalog.php');
@@ -20,7 +22,9 @@ class CatalogController
     {
         $categories = array();
         $categories = Category::getCategoriesList();
-        
+        // print_r($categories);
+        $group= Category::getCategoriesCase($categoryId);
+
         $categoryProducts = array();
         $categoryProducts = Product::getProductsListByCategory($categoryId, $page);
        

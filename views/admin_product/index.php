@@ -26,8 +26,8 @@
                     <th>Артикул</th>
                     <th>Название товара</th>
                     <th>Цена</th>
-                    <th></th>
-                    <th></th>
+                    <th>Редактировать</th>
+                    <th>Удалить</th>
                 </tr>
                 <?php foreach ($productsList as $product): ?>
                     <tr>

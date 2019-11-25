@@ -5,7 +5,7 @@
             <div class="col-2 category ">
                     <h4>Каталог</h4>
                         <?php foreach ($categories as $categoryItem): ?>
-                            <?php if($categoryItem['groups']==1): ?>
+                            <?php if($categoryItem['groups']==$group): ?>
                                     <h5 class="catalog-item">
                                         <a href="/category/<?php echo $categoryItem['id'];?>" class="<?php if($categoryId == $categoryItem['id']) echo 'catalog-item-active'; ?>">
                                             <?php echo $categoryItem['name'];?>

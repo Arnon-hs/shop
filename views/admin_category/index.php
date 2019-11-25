@@ -26,8 +26,8 @@
                     <th>Название категории</th>
                     <th>Порядковый номер</th>
                     <th>Статус</th>
-                    <th></th>
-                    <th></th>
+                    <th>Редактировать</th>
+                    <th>Удалить</th>
                 </tr>
                 <?php foreach ($categoriesList as $category): ?>
                     <tr>
@@ -45,5 +45,5 @@
     </div>
 </section>
 
-<!-- <?php include ROOT . '/views/layouts/footer_admin.php'; ?> -->
+<?php include ROOT . '/views/layouts/footer_admin.php'; ?>
 

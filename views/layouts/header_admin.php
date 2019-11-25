@@ -23,8 +23,8 @@
   <!-- <link rel="stylesheet" href="/template/css/main.css"> -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="/template/css/style.css">
-  <link rel="shortcut icon" href="/template/images/product-details/tea-coffee-logo.png" type="image/png">
-  <title>SHOP</title>
+  <link rel="shortcut icon" href="/template/images/shop/logo.jpg" type="image/jpg">
+  <title>Панель администратора</title>
 
   <script src="/template/js/script.js"></script>
 </head>
@@ -39,14 +39,14 @@
                             <div class="col-sm-6">
                                 <div class="contactinfo">
                                     <h5>
-                                        <a href="/admin"><i class="fa fa-edit"></i> Админпанель</a>
+                                        <a href="/admin"><img src="/template/images/icons/icons8-admin-settings-male-64.png" style="height: 20px;"> Админпанель</a>
                                     </h5>
                                 </div>
                             </div>
                             <div class="col-sm-6">
-                                <div class="social-icons ">
+                                <div class="social">
                                     <ul class="nav navbar-nav float-right">
-                                        <li><a href="/"><i class="fa fa-sign-out"></i>На сайт</a></li>
+                                        <li><a href="/"><img src="/template/images/icons/icons8-home-50.png" alt="" style="height: 20px;"> На сайт</a></li>
                                     </ul>
                                 </div>
                             </div>

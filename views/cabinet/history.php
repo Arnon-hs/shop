@@ -40,7 +40,7 @@
                         <td><?php echo Order::getStatusText($order['status']); ?></td>    
                         <td><?php echo $order['user_comment'];?></td>
                         <?php foreach ($products as $product):?>
-                            <?php print_r($products);?>
+                            <!-- <?php print_r($products);?> -->
                             <td><?php echo $product['name']; ?></td>
                             <td><?php echo $productsQuantity[$product['id']];?>
                             <td><?php echo $product['price']; ?></td>
@@ -62,5 +62,5 @@
     </div>
 </section>
 
-<!-- <?php include ROOT . '/views/layouts/footer.php'; ?> -->
+<?php include ROOT . '/views/layouts/footer.php'; ?>
 

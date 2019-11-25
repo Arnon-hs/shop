@@ -89,7 +89,7 @@
                         
                         
                         
-                        <input type="submit" name="submit" class="btn btn-primary" value="Сохранить">
+                        <input type="submit" name="submit" class="btn btn-primary mb-5" value="Сохранить">
                         
                       
                         
@@ -101,5 +101,5 @@
     </div>
 </section>
 
-<!-- <?php include ROOT . '/views/layouts/footer_admin.php'; ?> -->
+<?php include ROOT . '/views/layouts/footer_admin.php'; ?>
 

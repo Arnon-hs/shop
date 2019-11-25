@@ -94,5 +94,5 @@
             </div>
         </div>
     </div>
-    <!-- <?php include_once(ROOT."/views/layouts/footer.php"); ?> -->
+    <?php include_once(ROOT."/views/layouts/footer.php"); ?>
 

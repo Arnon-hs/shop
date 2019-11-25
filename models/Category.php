@@ -18,7 +18,7 @@ class Category
 
         $i = 0;
         while ($row = $result->fetch()) {
-            $categoryList[$i]['id'] = $row['id'];
+            $categoryList[$i] = $row;
             $categoryList[$i]['groups'] = $row['groups'];
             $categoryList[$i]['name'] = $row['name'];
             $i++;
@@ -32,13 +32,13 @@ class Category
         $db = Db::getConnection();
 
         // Запрос к БД
-        $result = $db->query('SELECT id, name, sort_order, status FROM category ORDER BY sort_order ASC');
+        $result = $db->query('SELECT id, name, sort_order, status FROM category ORDER BY id ASC');
 
         // Получение и возврат результатов
         $categoryList = array();
         $i = 0;
         while ($row = $result->fetch()) {
-            $categoryList[$i]['id'] = $row['id'];
+            $categoryList[$i] = $row;
             $categoryList[$i]['name'] = $row['name'];
             $categoryList[$i]['sort_order'] = $row['sort_order'];
             $categoryList[$i]['status'] = $row['status'];
@@ -56,6 +56,31 @@ class Category
                 return 'Скрыта';
                 break;
         }
+    }
+    public static function getCategoriesCase($category)
+    {
+        
+            if($category>=11 && $category<=14)
+            {
+                $group=1;
+                return $group;
+            }
+            if($category>=15 && $category<=17)
+            {
+                $group=2;
+                return $group;
+            }
+            if($category>=19 && $category<=21)
+            {
+                $group=3;
+                return $group;
+            }
+            if($category>=22 && $category<=27)
+            {
+                $group=4;
+                return $group;
+            }
+        
     }
     public static function getCategoryById($id)
     {
