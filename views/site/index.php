@@ -1,7 +1,7 @@
 <?php include ROOT . '/views/layouts/header.php'; ?>
 <div class="wrapper">
     <div class="main">
-        <div class="slider mx-auto">
+        <div class="container slider mx-auto">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -42,27 +42,27 @@
             <div class="container box_wrapper mt-4">
                 <div class="row justify-content-between">
                     <div class="col-8 tea_box ">
-                        Чай
+                        <img src="/template/images/home/1.jpg">
                     </div>
                     <div class="col-4 aks_box">
-                        Аксессуары
+                        <img src="/template/images/home/3.jpg" alt="">
                     </div>
                 </div>
             </div>
             <div class="container box_wrapper mt-4">
                 <div class="row justify-content-between">
                     <div class="col-4 sladkoe_box " >
-                        Сладкое
+                        <img src="/template/images/home/4.jpg" alt="">
                     </div>
                     <div class="col-8 coffee_box">
-                        Кофе
+                        <img src="/template/images/home/2.jpg" alt="">
                     </div>
                 </div>
             </div>
             <div class="container box_wrapper mt-4">
                 <div class="row">
                     <div class="col-12 sale_box">
-                        Акция
+                        <img src="/template/images/home/5.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -72,7 +72,7 @@
                     <div class="cycle-slideshow" 
                          data-cycle-fx=carousel
                          data-cycle-timeout=5000
-                         data-cycle-carousel-visible=3
+                         data-cycle-carousel-visible=4
                          data-cycle-carousel-fluid=true
                          data-cycle-slides="div.item"
                          data-cycle-prev="#prev"
@@ -102,10 +102,10 @@
                             <?php endforeach; ?>
                     </div>
 
-                    <a class="left recommended-item-control h_m" id="prev" href="#recommended-item-carousel" data-slide="prev">
+                    <a class="left recommended-item-control " id="prev" href="#recommended-item-carousel" data-slide="prev">
                         <img src="/template/images/icons/icons8-back-32.png">
                     </a>
-                    <a class="right recommended-item-control h_m" id="next"  href="#recommended-item-carousel" data-slide="next">
+                    <a class="right recommended-item-control " id="next"  href="#recommended-item-carousel" data-slide="next">
                             <img src="/template/images/icons/icons8-forward-32.png">
                     </a>
 

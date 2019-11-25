@@ -25,7 +25,7 @@
   <!-- <link rel="stylesheet" href="/template/css/main.css"> -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="/template/css/style.css">
-  <link rel="shortcut icon" href="/template/images/product-details/tea-coffee-logo.png" type="image/png">
+  <link rel="shortcut icon" href="/template/images/shop/logo.jpg" type="image/png">
   <title>Интернет магазин</title>
 
   <script src="/template/js/script.js"></script>
@@ -43,30 +43,30 @@
               <li class="mr-4"><a href="/about/"><img src="/template/images/icons/icons8-delivery-50.png"> Доставка</a></li>
               <li class="mr-4"><a href="/contacts/"><img src="/template/images/icons/icons8-contact-us-50.png"> Контакты</a></li>
             </ul>
-            <div class="number h_m col-6 col-md-4 ">+79258605436<img src="/template/images/icons/icons8-phone-50.png"> </div>
+            <div class="number h_m col-6 col-md-4">+79258605436<img class="ml-2" src="/template/images/icons/icons8-phone-50.png"> </div>
           </div>
         </div>
       </div>
       <div class="header-middle">
         <div class="container">
-          <div class="row">
+          <div class="row justify-content-between">
             <div class="col-md-2 ml-2">
               <div class="logo pull-left">
-                <a href="/"><img src="/template/images/product-details/tea-coffee-logo.png"></a>
+                <a href="/"><img src="/template/images/shop/logo.jpg"></a>
               </div>
             </div>
             <div class="col">
               <div class="div-search">
                 <nav class="navbar nav_search">
                   <form class="form-inline">
-                    <input class="form-control mr-sm-2 search" type="search" placeholder="Search" aria-label="Search">
+                    <input class="form-control mr-sm-2 search" type="search" placeholder="Поиск" aria-label="Search">
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Поиск</button>
                   </form>
                 </nav>
               </div>
             </div>
           
-            <div class="col-md-4 mt-2 mr-2">
+            <div class="col-md-4 mt-2 mr-2 pull-right">
               <div class="shop-menu">
                 <ul class="nav navbar-nav float-right h_m">
                   <li><a href="/cart/">
