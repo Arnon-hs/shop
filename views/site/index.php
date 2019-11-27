@@ -91,7 +91,7 @@
                                                     <?php echo $sliderItem['name'];?>
                                                 </p>
                                             </a>
-                                            <a href="/cart/add/<?php echo $sliderItem['id']; ?>" data-id="<?php echo $sliderItem['id']; ?>" class="btn btn-primary add-to-cart">В корзину</a>
+                                            <a href="/cart/add/<?php echo $sliderItem['id']; ?>/1" data-id="<?php echo $sliderItem['id']; ?>" class="btn btn-primary add-to-cart">В корзину</a>
                                         </div>
                                         <?php if ($sliderItem['is_new']): ?>
                                             <img src="/template/images/home/new.png" class="new" alt="" />

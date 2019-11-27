@@ -19,10 +19,12 @@
     crossorigin="anonymous"></script>
     <!-- include Cycle2 -->
   <script src="/template/js/jquery.cycle2.js"></script>
+  <script src="/template/js/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
 
   <!-- include one or more optional Cycle2 plugins -->
   <script src="/template/js/jquery.cycle2.carousel.js"></script>
   <!-- <link rel="stylesheet" href="/template/css/main.css"> -->
+  <link rel="stylesheet" href="/template/js/jquery-ui-1.12.1.custom/jquery-ui.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="/template/css/style.css">
   <link rel="shortcut icon" href="/template/images/shop/logo.jpg" type="image/jpg">
@@ -79,13 +81,20 @@
               <div class="div-search">
                 <nav class="navbar nav_search">
                   <form class="form-inline">
-                    <input class="form-control mr-sm-2 search" type="search" placeholder="Поиск" aria-label="Search">
+                    <input class="form-control mr-sm-2 search" type="text" placeholder="Поиск" aria-label="Search" id="search" name="search" size="20">
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Поиск</button>
                   </form>
                 </nav>
               </div>
             </div>
-          
+            <script>
+              $(function() {
+                  $( "#search" ).autocomplete({
+                      source: "<?php echo ROOT.'/components/Search.php'?>" ,
+                  });
+              });
+            </script>
+
             <div class="col-md-4 mt-2 mr-2 pull-right">
               <div class="shop-menu">
                 <ul class="nav navbar-nav float-right h_m">

@@ -1,30 +1,30 @@
 <?php include(ROOT.'/views/layouts/header.php'); ?>
     <div class="container">
             <h2 class="about_h2 mt-4">Наши преимущества перед конкурентами</h2>
-            <div class="about row justify-content-between mt-4 mb-4">
-                <div class="col-5 about-item ">
+            <div class="about row justify-content-between mt-2 mb-3">
+                <div class="col-6 about-item ">
                     <img src="/template/images/icons/icons8-flowers-96.png" alt="">
                     <p>
                         <h3>Всегда свежие цветы</h3>
                         Горшечные растения и букеты бережно доставляются со склада с соблюдением всех необходимых условий.
                     </p>
                 </div>
-                <div class="col-5 about-item">
+                <div class="col-6 about-item">
                     <img src="/template/images/icons/icons8-flower-doodle-96.png" alt="">
                     <p>
                         <h3>Проверенный поставщик</h3>
                         Лучшие растения и игрушки специально для вас.
                     </p>
                 </div>
-                <div class="w-100 mt-4"></div>
-                <div class="col-5 about-item">
+                <div class="w-100 mt-3"></div>
+                <div class="col-6 about-item">
                     <img src="/template/images/icons/icons8-low-price-96.png" alt="">
                     <p>
                         <h3>Низкие цены</h3>
                         Благодаря сотрудничеству со складом мы предоставляем низкие почти закупочные цены.
                     </p>
                 </div>
-                <div class="col-5 about-item">
+                <div class="col-6 about-item">
                     <img src="/template/images/icons/icons8-angellist-96.png" alt="">
                     <p>
                         <h3>Работаем без выходных</h3>
@@ -32,15 +32,15 @@
                     </p>
                 </div>
             </div>
-            <div class="payment delivery about justify-content-between mt-4 mb-4 row">
-                <div class="col-5">
+            <div class="payment delivery about justify-content-between mb-3 row">
+                <div class="col-6">
                     <img src="/template/images/icons/icons8-wallet-96.png" alt="">
                     <p>
                         <h3>Оплата</h3>
                         На данный момент мы принимаем только наличную оплату.
                     </p>
                 </div>
-                <div class="col-5">
+                <div class="col-6">
                     <img src="/template/images/icons/icons8-delivery-96.png" alt="">
                     <p>
                         <h3>Быстрая доставка</h3>
