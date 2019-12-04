@@ -37,8 +37,9 @@ Class CabinetController
             if (!User::checkPassword($password)) {
                 $errors[] = 'Пароль не должен быть короче 6-ти символов';
             }
+            $hashPass=crypt($password,'$2a$07$usesomesillystringforsalt$');
             if($errors==false){
-                $result=User::edit($userId,$firstname,$secondname,$lastname,$password);
+                $result=User::edit($userId,$firstname,$secondname,$lastname,$hashPass);
             }
         }
         require_once(ROOT. '/views/cabinet/edit.php');

@@ -9,7 +9,7 @@
         <div class="w-100"></div>
         <div class="col text-center">
             <!-- <input type="button" class="btn btn-primary " onclick="showWindow();" value="Войти"> -->
-            <a href="/user/login/">Логин</a> 
+            <a href="/user/login/" class="voiti">Войти в личный кабинет</a> 
         </div>
     </div>
 <?php else: ?>

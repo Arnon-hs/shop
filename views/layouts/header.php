@@ -19,12 +19,11 @@
     crossorigin="anonymous"></script>
     <!-- include Cycle2 -->
   <script src="/template/js/jquery.cycle2.js"></script>
-  <script src="/template/js/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
-
+  <script src="/template/js/jquery-ui.js"></script>
   <!-- include one or more optional Cycle2 plugins -->
   <script src="/template/js/jquery.cycle2.carousel.js"></script>
   <!-- <link rel="stylesheet" href="/template/css/main.css"> -->
-  <link rel="stylesheet" href="/template/js/jquery-ui-1.12.1.custom/jquery-ui.css">
+  <link rel="stylesheet" href="/template/css/jquery-ui.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="/template/css/style.css">
   <link rel="shortcut icon" href="/template/images/shop/logo.jpg" type="image/jpg">
@@ -50,48 +49,58 @@
           </path>
         </svg>
       </div>
-
-
-
-
   <div class="wrapper pb-4">
     <header>
-      <div class="header-top mt-2">
+      <div class="header-top pt-2 pb-2">
         <div class="about_us container">
-          <div class="menu navbar-nav-scroll row">
+          <div class="menu navbar-nav-scroll row align-items-center">
             <ul class="navbar-nav bd-navbar-nav flex-row col-12 col-md-8 h_m">
               <li class="mr-4"><a href="/about/"><img src="/template/images/icons/icons8-about-50.png">О нас</a></li>
               <li class="mr-4"><a href="/about/"><img src="/template/images/icons/icons8-wallet-50.png">Оплата</a></li>
               <li class="mr-4"><a href="/about/"><img src="/template/images/icons/icons8-delivery-50.png"> Доставка</a></li>
-              <li class="mr-4"><a href="/contacts/"><img src="/template/images/icons/icons8-contact-us-50.png"> Контакты</a></li>
+              <li class="mr-4"><a href="/about/"><img src="/template/images/icons/icons8-contact-us-50.png"> Контакты</a></li>
             </ul>
-            <div class="number h_m col-6 col-md-4">+79258605436<img class="ml-2" src="/template/images/icons/icons8-phone-50.png"> </div>
+            <div class="number h_m col-6 col-md-4">
+              <img class="ml-2" src="/template/images/icons/icons8-phone-50.png"> 
+              <span>+79258605436</span>
+              <a href="/contacts/"><img class="ml-2" src="/template/images/icons/icons8-email-50.png">Обратная связь</a>
+            </div>
           </div>
         </div>
       </div>
       <div class="header-middle">
         <div class="container">
-          <div class="row justify-content-between">
+          <div class="row justify-content-between align-items-center">
             <div class="col-md-2 ml-2">
-              <div class="logo pull-left">
+              <div class="logo ">
                 <a href="/"><img src="/template/images/shop/logo.jpg"></a>
               </div>
             </div>
-            <div class="col">
+            <div class="col ">
               <div class="div-search">
                 <nav class="navbar nav_search">
                   <form class="form-inline">
-                    <input class="form-control mr-sm-2 search" type="text" placeholder="Поиск" aria-label="Search" id="search" name="search" size="20">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Поиск</button>
+                    <input class="form-control mr-sm-2 search" type="text" placeholder="Поиск" name="search" id="search"  />
+                    <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Поиск</button> -->
                   </form>
+                  <a href="" class="searchLink"><img src="/template/images/icons/icons8-search-32.png" alt="Поиск" class="img-search"></a>
+                  <!-- <p>Suggestions: <span id="txtHint"></span></p> -->
                 </nav>
               </div>
             </div>
+            
             <script>
-              $(function() {
-                  $( "#search" ).autocomplete({
-                      source: "<?php echo ROOT.'/components/Search.php'?>" ,
-                  });
+              $(function(){
+                $("#search").autocomplete({
+                // source: '<?php echo ROOT. '/components/Search.php'?> ',
+                source:'/components/Search.php',
+                minLength: 3,
+                });
+              });
+
+              var searchLink=$(".searchLink");
+              $(".ui-menu-item-wrapper").on(click, function(){
+                searchLink.attr("href","/product/11 ");
               });
             </script>
 
@@ -116,7 +125,7 @@
         </div>
       </div>
       <div class="menu_header">
-        <ul class="nav nav-tabs nav-fill menu_ul ">
+        <ul class="nav nav-tabs nav-fill menu_ul container">
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
               aria-haspopup="true" aria-expanded="false">Цветы</a>

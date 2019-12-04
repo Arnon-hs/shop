@@ -1,10 +1,19 @@
 <?php
-$q = $_GET[""]; // на входе получаем переменную term
-$q = str_replace(array("'","\""), "", $q); //убираем возможные служебные символы
-$db=Db::getConnection();
-  
-$list = $db->getAll("SELECT name FROM product WHERE upper(name) LIKE upper('%?p%') GROUP BY name", $q); // делаем запрос к базе
-if (count($list)>1) { // если массив данных содержит более 1 записи, то мы ее выдаем
-echo json_encode($list); // конвертируем массив данных в формат JSON
-}
-?>
+$db = mysqli_connect("localhost", "root", "", "db_coffee","3308") or die("Нет соединения с БД");
+mysqli_set_charset($db, "utf8") or die("Не установлена кодировка соединения");
+function search_autocomplete(){
+    global $db;
+    $search = trim(mysqli_real_escape_string($db, $_GET['term']));
+    $query = "SELECT name FROM product WHERE name LIKE '%{$search}%' LIMIT 10";
+    $res = mysqli_query($db, $query);
+    $result_search = array();
+    while($row = mysqli_fetch_assoc($res)){
+    $result_search[] = array('label' => $row['name']);
+    }
+    return $result_search;
+   }
+    
+   if(!empty($_GET['term'])){
+    $search = search_autocomplete();
+    exit( json_encode($search));
+   }

@@ -55,7 +55,7 @@
                 <h4>Похожие товары</h4>
                 <div class="row">
                 <?php foreach ($sliderProducts as $sliderItem): ?>
-                            <div class="item col-6">
+                            <div class="item col-6 mb-5">
                                 <div class="product-image-wrapper">
                                     <div class="single-products">
                                         <div class="productinfo text-center ">
@@ -68,11 +68,11 @@
                                                     <?php echo $sliderItem['name'];?>
                                                 </p>
                                             </a>
-                                            <a href="/cart/add/<?php echo $sliderItem['id']; ?>" data-id="<?php echo $sliderItem['id']; ?>" class="btn btn-primary add-to-cart">В корзину</a>
+                                            <a href="/cart/add/<?php echo $sliderItem['id']; ?>/1" data-id="<?php echo $sliderItem['id']; ?>" class="btn btn-primary add-to-cart">В корзину</a>
                                             <script>
                                             
                                             function addhref(){
-                                                var href="/cart/add/<?php echo $sliderItem['id']; ?>/";
+                                                var href="/cart/add/<?php echo $product['id']; ?>/";
                                                 var kolvo= document.getElementById("example-number-input").value;
                                                 var add = document.getElementById("buttonAdd");
                                                 add.href=href;

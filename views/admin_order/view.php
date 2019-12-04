@@ -1,7 +1,7 @@
 <?php include ROOT . '/views/layouts/header_admin.php'; ?>
 
 <section>
-    <div class="container">
+    <div class="container mb-4">
         <div class="row">
 
             
@@ -84,7 +84,7 @@
                 </tr>
             </table>
 
-            <a href="/admin/order/"><input type="button" class="btn btn-primary mb-2" value="Назад"><i class="fa fa-arrow-left"></i></a>
+            <a href="/admin/order/"><input type="button" class="btn btn-primary mb-4" value="Назад"></a>
             </div>
         </div>
 

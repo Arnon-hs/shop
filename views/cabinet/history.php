@@ -39,18 +39,22 @@
                         <td><?php echo $order['date']; ?></td>
                         <td><?php echo Order::getStatusText($order['status']); ?></td>    
                         <td><?php echo $order['user_comment'];?></td>
-                        <?php foreach ($products as $product):?>
-                            <!-- <?php print_r($products);?> -->
-                            <td><?php echo $product['name']; ?></td>
-                            <td><?php echo $productsQuantity[$product['id']];?>
-                            <td><?php echo $product['price']; ?></td>
-                            <?php 
-                            $sum=$sum+($product['price']*$productsQuantity[$product['id']])?>
+                        <td colspan="3">
+                            <?php foreach ($products as $product):?>
+                                <tr>
+                                
+                                    <td><?php echo $product['name']; ?></td>
+                                    <td><?php echo $productsQuantity[$product['id']];?>
+                                    <td><?php echo $product['price']; ?></td>
+                                    <?php 
+                                    $sum=$sum+($product['price']*$productsQuantity[$product['id']])?>
+                                </tr>
+                            <?php endforeach;?>
+                        </td>
                             <tr>
                                 <td colspan="8">Общая стоимость:</td>
                                 <td><?php echo $sum?>р</td>
                             </tr>
-                        <?php endforeach;?>
                     </tr>
                     
                     

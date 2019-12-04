@@ -1,18 +1,21 @@
 <?php include ROOT . '/views/layouts/header.php'; ?>
     <div class="container">
-        <!-- <div class="crumbs">Главная>>Кофе>><?php echo $categoryList[$categoryId]['name']; ?></div> -->
         <div class="row mt-4 mb-4">
             <div class="col-2 category ">
+                <div class="cat pt-2 pb-2 pl-2">   
                     <h4>Каталог</h4>
                         <?php foreach ($categories as $categoryItem): ?>
                             <?php if($categoryItem['groups']==$group): ?>
+                            <hr />
                                     <h5 class="catalog-item">
                                         <a href="/category/<?php echo $categoryItem['id'];?>" class="<?php if($categoryId == $categoryItem['id']) echo 'catalog-item-active'; ?>">
                                             <?php echo $categoryItem['name'];?>
                                         </a>
                                     </h5>
+                                    
                             <?php endif; ?>
                         <?php endforeach; ?>
+                </div>
             </div>
 
             <div class="col-10 productList">

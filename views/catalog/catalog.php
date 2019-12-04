@@ -3,14 +3,17 @@
         
         <div class="row mt-4 mb-4">
             <div class="col-2 category ">
+                <div class="cat pt-2 pb-2 pl-2">
                     <h4>Каталог</h4>
                         <?php foreach ($categories as $categoryItem): ?>
+                            <hr />
                                     <h5 class="catalog-item">
                                         <a href="/category/<?php echo $categoryItem['id'];?>">
                                             <?php echo $categoryItem['name'];?>
                                         </a>
                                     </h5>
                         <?php endforeach; ?>
+                </div>
             </div>
 
             <div class="col-10 productList">

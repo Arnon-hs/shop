@@ -12,8 +12,10 @@ class CatalogController
         print_r($group);
         $latestProducts = array();
         $latestProducts = Product::getLatestProducts(12);
+        $page=1;
+        $countLatestProduct=count($latestProducts);
+        $pagination= new Pagination($countLatestProduct, $page, Product:: SHOW_BY_DEFAULT, 'page-');
         require_once(ROOT . '/views/catalog/catalog.php');
-        //require_once(ROOT . '/views/catalog/index.php');
 
         return true;
     }

@@ -13,7 +13,7 @@
                         <img class="d-block w-100" src="/template/images/slider/9.jpeg" alt="Первый слайд">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="/template/images/slider/10.jpg" alt="Второй слайд">
+                        <img class="d-block w-100" src="/template/images/slider/12.jpg" alt="Второй слайд">
                     </div>
                     <div class="carousel-item">
                         <img class="d-block w-100" src="/template/images/slider/11.jpg" alt="Третий слайд">
@@ -42,27 +42,53 @@
             <div class="container box_wrapper mt-4">
                 <div class="row justify-content-between">
                     <div class="col-8 tea_box ">
-                        <img src="/template/images/home/1.jpg">
+                        <a href="/category/11">
+                            <img src="/template/images/home/13.jpg">
+                            <div class="banner-long-cveti banner">
+                                <a href="/category/11">Цветы</a>
+                                <br>
+                                <span>Большой выбор свежих цветов</span>
+                            </div>
+                        </a>
                     </div>
                     <div class="col-4 aks_box">
-                        <img src="/template/images/home/3.jpg" alt="">
+                        <a href="/category/24">
+                            <img src="/template/images/home/3.jpg" alt="">
+                            <div class="banner-short-igr banner">
+                                <a href="/category/24">Игрушки</a>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
             <div class="container box_wrapper mt-4">
                 <div class="row justify-content-between">
                     <div class="col-4 sladkoe_box " >
-                        <img src="/template/images/home/4.jpg" alt="">
+                        <a href="/category/22">
+                            <img src="/template/images/home/4.jpg" alt="">
+                            <div class="banner-short-shok banner ">
+                                <a href="/category/22"> Сладкое </a>
+                            </div>
+                        </a>
                     </div>
                     <div class="col-8 coffee_box">
-                        <img src="/template/images/home/2.jpg" alt="">
+                        <a href="/category/15">
+                            <img src="/template/images/home/14.jpg" alt="">
+                            <div class="banner-long-buket banner">
+                                <a href="/category/15"> Букеты </a>
+                                <br>
+                                <span>Лучшие композиции от наших флористов</span>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
             <div class="container box_wrapper mt-4">
                 <div class="row">
                     <div class="col-12 sale_box">
-                        <img src="/template/images/home/5.jpg" alt="">
+                        <a href="/category/17">
+                            <img src="/template/images/home/5-1.jpg" alt="">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -72,7 +98,7 @@
                     <div class="cycle-slideshow" 
                          data-cycle-fx=carousel
                          data-cycle-timeout=5000
-                         data-cycle-carousel-visible=4
+                         data-cycle-carousel-visible=5
                          data-cycle-carousel-fluid=true
                          data-cycle-slides="div.item"
                          data-cycle-prev="#prev"
@@ -80,7 +106,7 @@
                          
                          >                        
                             <?php foreach ($sliderProducts as $sliderItem): ?>
-                            <div class="item">
+                            <div class="item mr-4 ml-4 mt-2">
                                 <div class="product-image-wrapper">
                                     <div class="single-products">
                                         <div class="productinfo text-center">
