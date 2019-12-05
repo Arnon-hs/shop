@@ -11,12 +11,19 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img class="d-block w-100" src="/template/images/slider/9.jpeg" alt="Первый слайд">
+                        <p>Свежие пионы</p>
+                        <span>Мы собрали специально для вас лучшие бутоны.</span>
+                        
                     </div>
                     <div class="carousel-item">
                         <img class="d-block w-100" src="/template/images/slider/12.jpg" alt="Второй слайд">
+                        <p>Акция на букеты</p>
+                        <span>Скидки до 30%. Следите за ценами, новые акции каждую неделю!</span>
                     </div>
                     <div class="carousel-item">
                         <img class="d-block w-100" src="/template/images/slider/11.jpg" alt="Третий слайд">
+                        <p>Составим композицию</p>
+                        <span>Наши флористы подберут лучшие цветы для вашей композиции.</span>
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">

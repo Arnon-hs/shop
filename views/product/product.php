@@ -42,7 +42,11 @@
                         </a>
                     </div>
                     <hr />
-                    <div class="delivery">Доставка осуществляется в течении 3 дней курьерской службой</div>
+                    <div class="advantages pr-4 pl-4 pt-4 pb-4">
+                        <p><img src="/template/images/icons/icons8-delivery-50.png" alt=""> <span>Доставка</span><br />   Доставка осуществляется в течении 3 дней курьерской службой</p>
+                        <p><img src="/template/images/icons/icons8-open-envelope-love-64.png" alt=""><span>Подарочный конверт</span><br /> В комплекте открытка, средство для ухода за цветами, инструкция</p>
+                        <p><img src="/template/images/icons/icons8-guarantee-64.png" alt=""><span>Гарантия качества</span><br /> Замена букета или возврат денег</p>
+                    </div>
                 </div>
             </div>
         <hr />
@@ -50,6 +54,7 @@
             <div class="description col-8">
                     <h4>Описание:</h4>
                     <p><?php echo $product['description'];?></p>
+                    <p><b>Страна производитель:</b> <?php echo $product['brand'];?></p>
             </div>
             <div class="col-4 pohojie">
                 <h4>Похожие товары</h4>

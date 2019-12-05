@@ -39,10 +39,10 @@
                         <td><?php echo $order['date']; ?></td>
                         <td><?php echo Order::getStatusText($order['status']); ?></td>    
                         <td><?php echo $order['user_comment'];?></td>
+                        
                         <td colspan="3">
                             <?php foreach ($products as $product):?>
                                 <tr>
-                                
                                     <td><?php echo $product['name']; ?></td>
                                     <td><?php echo $productsQuantity[$product['id']];?>
                                     <td><?php echo $product['price']; ?></td>

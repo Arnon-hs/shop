@@ -261,9 +261,39 @@ body {
     object-fit: cover;
     width: 100% !important;
 }
-/* .last{
-    right: 0 !important;
-} */
+.advantages img{
+    width: 32px;
+    height: auto;
+}
+.advantages span{
+    margin-left: 1rem;
+    font-size: 22px;
+    font-weight: bold;
+}
+.advantages{
+    background-color:#ffebf1 ;
+}
+.carousel-item p{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-bottom: 5rem;
+    padding-left: 10rem;
+    color: #8DECB0;
+    font-weight: bold;
+    font-family: "RegularFontBold";
+    font-size: 32px;
+}
+.carousel-item span{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-bottom: 2.5rem;
+    padding-left: 10rem;
+    color: #F4FE97;
+    font-family: "RegularFontBold";
+    font-size: 20px;
+}
 .img-search{
     position: absolute;
     right: 30px;
@@ -457,7 +487,7 @@ body {
     color: black;
 }
 .banner a:hover{
-    color:rgb(40, 167, 69);
+    color:#8DECB0;
 }
 .add-to-cart {
     color: white;

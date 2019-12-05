@@ -99,20 +99,23 @@ class UserController
         // Получаем данные о конкретном заказе
         $ordersList=array();
         $ordersList = Order::getOrdersListById($userId);
-        for($i=0;$i<count($ordersList);$i++){
+        foreach($ordersList as $order){
             // print_r($ordersList[$i]);
             // echo '<br />';
             // Получаем массив с идентификаторами и количеством товаров
-            $productsQuantity = json_decode($ordersList[$i]['products'], true);
+            $productsQuantity = json_decode($order['products'], true);
 
             // Получаем массив с индентификаторами товаров
             $productsIds = array_keys($productsQuantity);
 
             // Получаем список товаров в заказе
             $products = Product::getProductsByIds($productsIds);
-            // print_r($products);
+            // $order['products']=$products;
             // echo '<br />';
+            // print_r($order['products']);
         }
+
+        // print_r($ordersList);
         require_once(ROOT.'/views/cabinet/history.php');
         return true;
     }
