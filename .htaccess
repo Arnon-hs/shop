@@ -1,5 +1,5 @@
 AddDefaultCharset utf-8
-
+ErrorDocument 404 /views/404/err404.html
 RewriteEngine on
 RewriteBase /
 

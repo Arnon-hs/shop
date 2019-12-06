@@ -49,14 +49,14 @@
     <header>
       <div class="header-top pt-2 pb-2">
         <div class="about_us container">
-          <div class="menu navbar-nav-scroll row align-items-center">
-            <ul class="navbar-nav bd-navbar-nav flex-row col-12 col-md-8 h_m">
+          <div class="menu navbar-nav-scroll row justify-content-center align-items-center">
+            <ul class="navbar-nav bd-navbar-nav flex-row col-sm-12 col-lg-8 h_m">
               <li class="mr-4"><a href="/about/"><img src="/template/images/icons/icons8-about-50.png">О нас</a></li>
               <li class="mr-4"><a href="/about/"><img src="/template/images/icons/icons8-wallet-50.png">Оплата</a></li>
               <li class="mr-4"><a href="/about/"><img src="/template/images/icons/icons8-delivery-50.png"> Доставка</a></li>
               <li class="mr-4"><a href="/about/"><img src="/template/images/icons/icons8-contact-us-50.png"> Контакты</a></li>
             </ul>
-            <div class="number h_m col-6 col-md-4">
+            <div class="number h_m col-sm-10 col-lg-4 ">
               <img class="ml-2" src="/template/images/icons/icons8-phone-50.png"> 
               <span>+79258605436</span>
               <a href="/contacts/"><img class="ml-2" src="/template/images/icons/icons8-email-50.png">Обратная связь</a>
@@ -67,7 +67,7 @@
       <div class="header-middle">
         <div class="container">
           <div class="row justify-content-between align-items-center">
-            <div class="col-md-2 ml-2">
+            <div class="col-lg-2 col-sm-2 ml-2">
               <div class="logo ">
                 <a href="/"><img src="/template/images/shop/logo.jpg"></a>
               </div>
@@ -77,7 +77,7 @@
                 <nav class="navbar nav_search">
                   <form class="form-inline">
                     <input class="form-control mr-sm-2 search" type="text" placeholder="Поиск" name="search" id="search"  />
-                    <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Поиск</button> -->
+                    
                   </form>
                   <a href="" class="searchLink"><img src="/template/images/icons/icons8-search-32.png" alt="Поиск" class="img-search"></a>
                   <!-- <p>Suggestions: <span id="txtHint"></span></p> -->
@@ -88,7 +88,6 @@
             <script>
               $(function(){
                 $("#search").autocomplete({
-                // source: '<?php echo ROOT. '/components/Search.php'?> ',
                 source:'/components/Search.php',
                 minLength: 3,
                 });
@@ -100,12 +99,12 @@
               });
             </script>
 
-            <div class="col-md-4 mt-2 mr-2 pull-right">
-              <div class="shop-menu">
-                <ul class="nav navbar-nav float-right h_m">
+            <div class="col-lg-4 col-sm-12  mt-2 mr-2 pull-right">
+              <div class="shop-menu ">
+                <ul class="nav navbar-nav float-right h_m ">
                   <li><a href="/cart/">
                     <img src="/template/images/icons/icons8-shopping-cart-50.png">
-                    Корзина
+                      Корзина
                       (<span id="cart-count"><?php echo Cart::countItems();?></span>)
                     </a></li> 
                   <?php if(User::isGuest()): ?>

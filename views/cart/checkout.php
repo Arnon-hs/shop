@@ -2,7 +2,7 @@
     <div class="container">
         <!-- <div class="crumbs">Главная>>Кофе>><?php echo $categoryList[$categoryId]['name']; ?></div> -->
         <div class="row mt-4 mb-4">
-            <div class="col-2 category ">
+            <div class="col-lg-2 col-sm-3  category ">
                 <div class="cat pt-2 pb-2 pl-2">
                     <h4>Каталог</h4>
                         <?php foreach ($categories as $categoryItem): ?>
@@ -26,6 +26,7 @@
                     <?php if ($result): ?>
 
                         <p>Ваш заказ оформлен. Мы Вам перезвоним.</p>
+                        <a class="btn btn-primary checkout mt-2" href="/"><i class="fa fa-shopping-cart"></i> Вернуться к покупкам</a>
 
                     <?php else: ?>
 

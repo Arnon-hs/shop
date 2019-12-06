@@ -39,7 +39,7 @@
         <div class="wrapper">
             <div class="container box_wrapper mt-4">
                 <div class="row justify-content-between">
-                    <div class="col-8 tea_box ">
+                    <div class="col-lg-8 col-sm-12 tea_box ">
                         <a href="/category/11">
                             <img src="/template/images/home/13.jpg">
                             <div class="banner-long-cveti banner">
@@ -49,7 +49,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-4 aks_box">
+                    <div class="col-lg-4 col-sm-12 aks_box">
                         <a href="/category/24">
                             <img src="/template/images/home/3.jpg" alt="">
                             <div class="banner-short-igr banner">
@@ -61,7 +61,7 @@
             </div>
             <div class="container box_wrapper mt-4">
                 <div class="row justify-content-between">
-                    <div class="col-4 sladkoe_box " >
+                    <div class="col-lg-4 col-sm-12 sladkoe_box " >
                         <a href="/category/22">
                             <img src="/template/images/home/4.jpg" alt="">
                             <div class="banner-short-shok banner ">
@@ -69,7 +69,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-8 coffee_box">
+                    <div class="col-lg-8 col-sm-12 coffee_box">
                         <a href="/category/15">
                             <img src="/template/images/home/14.jpg" alt="">
                             <div class="banner-long-buket banner">
@@ -96,12 +96,10 @@
                     <div class="cycle-slideshow" 
                          data-cycle-fx=carousel
                          data-cycle-timeout=5000
-                         data-cycle-carousel-visible=5
                          data-cycle-carousel-fluid=true
                          data-cycle-slides="div.item"
                          data-cycle-prev="#prev"
                          data-cycle-next="#next"
-                         
                          >                        
                             <?php foreach ($sliderProducts as $sliderItem): ?>
                             <div class="item mr-4 ml-4 mt-2">

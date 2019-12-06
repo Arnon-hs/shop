@@ -13,6 +13,7 @@
             <div class="col-12">
                 <h4>История заказов</h4>
             </div>
+            <?php foreach ($ordersList as $order): ?>
             <table class="table-bordered table-striped table">
                 <tr>
                     <th>ID заказа</th>
@@ -21,12 +22,9 @@
                     <th>Дата оформления</th>
                     <th>Статус</th>
                     <th>Комментарий</th>
-                    <th>Товары</th>
-                    <th>Количество</th>
-                    <th>Цена</th>
                 </tr>
                 
-                <?php foreach ($ordersList as $order): ?>
+                
                 <?php $sum=0;?>
                     
                     <tr>
@@ -36,11 +34,16 @@
                         <td><?php echo $order['date']; ?></td>
                         <td><?php echo Order::getStatusText($order['status']); ?></td>    
                         <td><?php echo $order['user_comment'];?></td>
-                        <td colspan="3">
-                        <table>
+                        <tr>
+                            <th>Товары</th>
+                            <th>Количество</th>
+                            <th>Цена</th>
+                        </tr>
+                        
+                        <tr>
                             <?php foreach ($products as $product):?>
                             <!-- выводит последние товары!!! -->
-                                <tr rowspan="<?php echo (count($products));?>">
+                                <tr>
                                     <td><?php echo $product['name']; ?></td>
                                     <td><?php echo $productsQuantity[$product['id']];?>
                                     <td><?php echo $product['price']; ?></td>
@@ -48,18 +51,18 @@
                                     $sum=$sum+($product['price']*$productsQuantity[$product['id']])?>
                                 </tr>
                             <?php endforeach;?>
-                        </table>
-                    </td>
+                        </tr>
+                        
                             <tr>
-                                <td colspan="8">Общая стоимость:</td>
+                                <td colspan="2 ">Общая стоимость:</td>
                                 <td><?php echo $sum?>р</td>
                             </tr>
                     </tr>
                     
-                    
+                    </table> 
                 <?php endforeach; ?>
                 
-            </table>
+            
 
         </div>
     </div>

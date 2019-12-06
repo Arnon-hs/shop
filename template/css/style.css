@@ -49,10 +49,8 @@ body {
 .box_wrapper .col-8, .col-4, .col-12{
     padding: 0 !important;
 }
-.reg{
-    margin-right: 30%;
-    margin-left: 30%;
-}
+
+
 .voiti{
     font-size: 18px;
     color: #f592bb;
@@ -117,7 +115,6 @@ body {
    }
 .cycle-slideshow { 
     height: 50% ;
-    
 }
 .cycle-slideshow img {
     width: 100%; 
@@ -145,6 +142,11 @@ body {
 .left{
     left: 10%;
 }
+@media (max-width:767px) {
+    .recommended-item-control{
+        bottom: 10%;
+    }
+}
 .slider {
     padding: 0;
     display: block;
@@ -169,9 +171,14 @@ body {
 }
 .tea_box{
     height: 300px;
-    background-color: green;
     border-right: 10px solid white;
     /* right: 20px; */
+}
+.box_wrapper .col-lg-8, .col-lg-4{
+    padding: 0 ;
+}
+.box_wrapper .col-sm-12{
+    padding-bottom: 2rem ;
 }
 .admin_ul li{
     list-style-type: none ;
@@ -181,22 +188,16 @@ body {
 }
 .aks_box{
     height: 300px;
-    background-color: grey;
 }
 .sladkoe_box{
     height: 300px;
-    background-color: plum;
     border-right: 10px solid white;
-    /* right: 20px; */
 }
 .coffee_box{
     height: 300px;
-    background-color: rgb(54, 39, 39);
 }
 .sale_box{
     height: 300px;
-    /* margin-right: 20px; */
-    background-color: sandybrown;
 }
 .item_box{
     height: auto;
@@ -232,22 +233,6 @@ body {
     
    } 
 
-/* .menu > a:after{
-    background-color: #42b983;
-    display: block;
-    content: "";
-    height: 3px;
-    width: 0;
-    transition: width .3s ease-in;
-} */
-/* .attr > span:after{
-	background-color: tomato;
-	display: block;
-	content: "";
-	height: 3px;
-	width: 0;
-	transition: width .3s ease-in-out;
-} */
 .h1_items{
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -375,8 +360,6 @@ body {
     margin-top: 0.5rem;
 }
 .productList{
-    height: 900px;
-    border: black solid 0px;
 }
 .product-image-wrapper{
     box-shadow: 0 0 10px rgba(0,0,0,0.5);

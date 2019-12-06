@@ -1,7 +1,7 @@
 <?php include ROOT . '/views/layouts/header.php'; ?>
     <div class="container">
         <div class="row mt-4 mb-4">
-            <div class="col-2 category ">
+            <div class="col-lg-2 col-sm-3 category ">
                 <div class="cat pt-2 pb-2 pl-2">   
                     <h4>Каталог</h4>
                         <?php foreach ($categories as $categoryItem): ?>
@@ -18,11 +18,11 @@
                 </div>
             </div>
 
-            <div class="col-10 productList">
+            <div class="col-sm-9 col-lg-10 productList">
                 <h2 class="text-center">Последние товары</h2>
                 <div class="row mb-4 mt-4 mr-4 ml-4">
                     <?php foreach ($categoryProducts as $product): ?>
-                        <div class="col-sm-3">
+                        <div class="col-lg-3 col-sm-6">
                             <div class="product-image-wrapper">
                                 <div class="single-products">
                                     <div class="productinfo text-center">

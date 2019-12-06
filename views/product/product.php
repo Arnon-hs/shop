@@ -1,23 +1,23 @@
 <?php include ROOT . '/views/layouts/header.php'; ?>
     <div class="container mt-4">
             <div class="content_product row">
-                <div class="col-7 ">
+                <div class="col-lg-7 col-sm-12 ">
                     <div class="img_photo">
                         <img src="<?php echo Product::getImage($product['id']); ?>">
                     </div>
                 </div>
-                <div class="col-5">
+                <div class="col-lg-5 col-sm-12">
                     <p>Артикул:<?php echo $product['code'];?> </p>
                     <h1><?php echo $product['name'];?></h1>
                     <div class="row">
-                        <div class="price col-3">
+                        <div class="price col-sm-6 col-lg-3">
                             <label for="price_product" class="col-form-label">Цена:</label>
                             <h3 id="price_product" ><?php echo $product['price'];?></h3>
                             <script>
                               var price=<?php echo $product['price']; ?>;
                             </script>
                         </div>
-                        <div class="count-product col-3 ">
+                        <div class="count-product col-sm-6 col-lg-3 ">
                                 <div class="form-group">
                                         <label for="example-number-input" class="col-form-label">Количество:</label>
                                         <input class="form-control" type="number" value="1" min="1" id="example-number-input" onchange=" countPrice(); addhref();">
@@ -51,16 +51,16 @@
             </div>
         <hr />
         <div class="row mb-4">
-            <div class="description col-8">
+            <div class="description col-sm-12">
                     <h4>Описание:</h4>
                     <p><?php echo $product['description'];?></p>
                     <p><b>Страна производитель:</b> <?php echo $product['brand'];?></p>
             </div>
-            <div class="col-4 pohojie">
+            <div class="col-sm-12 pohojie">
                 <h4>Похожие товары</h4>
                 <div class="row">
                 <?php foreach ($sliderProducts as $sliderItem): ?>
-                            <div class="item col-6 mb-5">
+                            <div class="item col-6 mb-5 mt-2">
                                 <div class="product-image-wrapper">
                                     <div class="single-products">
                                         <div class="productinfo text-center ">

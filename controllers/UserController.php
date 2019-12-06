@@ -100,7 +100,7 @@ class UserController
         $ordersList=array();
         $ordersList = Order::getOrdersListById($userId);
         foreach($ordersList as $order){
-            // print_r($ordersList[$i]);
+            // print_r($order);
             // echo '<br />';
             // Получаем массив с идентификаторами и количеством товаров
             $productsQuantity = json_decode($order['products'], true);
