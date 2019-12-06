@@ -42,9 +42,10 @@
                     <?php endforeach;?>                   
 
                 </div>
-                <!-- Постраничная навигация -->
-                <?php echo $pagination->get(); ?>
-
+                <div class="pag">
+                    <!-- Постраничная навигация -->
+                    <?php echo $pagination->get(); ?>
+                </div>
             </div>
         </div>
     </div>

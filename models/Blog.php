@@ -1,12 +1,9 @@
 <?php
-
+//не реализована
 class Blog
 {
 
-    /**
-     * Returns single blog item with specified id
-     * @param integer $id
-     */
+    
     public static function getBlogItemById($id)
     {
         $id = intval($id);
@@ -24,9 +21,7 @@ class Blog
         }
     }
 
-    /**
-     * Returns an array of blog items
-     */
+    
     public static function getBlogList() {
  
         $db = Db::getConnection();

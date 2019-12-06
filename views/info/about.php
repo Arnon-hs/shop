@@ -48,25 +48,7 @@
                     </p>
                 </div>
             </div>
-            <!-- <div class="search">
-            <p><b>Start typing a name in the input field below:</b></p>
-                <form>
-                First name: <input type="text" onkeyup="showHint(this.value)">
-                </form>
-                <p>Suggestions: <span id="txtHint"></span></p>
-            </div>
-            <script>
-                $( "#developer" ).autocomplete({
-                    source: function( request, response ) {
-                        var matcher = new RegExp( $.ui.autocomplete.escapeRegex( request.term ), "i" );
-                        response( $.grep( names, function( value ) {
-                        value = value.label || value.value || value;
-                        return matcher.test( value ) || matcher.test( normalize( value ) );
-                        }) );
-                    }
-                    });
-                }
-            </script> -->
+            
             <div class="contacts about row justify-content-md-center mb-4">
                 
                 <div class="col-6">

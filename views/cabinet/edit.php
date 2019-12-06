@@ -6,11 +6,7 @@
         <div class="col text-center">
             <h3>Данные успешно изменены!</h3>
         </div>
-        <!-- <div class="w-100"></div>
-        <div class="col text-center">
-            <!-- <input type="button" class="btn btn-primary " onclick="showWindow();" value="Войти"> -->
-            <!-- <a href="/user/login/">Логин</a> 
-        </div> -->
+        
     </div>
 <?php else: ?>
     <h3 class="text-center">Редактирование данных пользователя</h3>

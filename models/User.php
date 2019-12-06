@@ -119,7 +119,7 @@ class User
             return $result->fetch();
         }
     }
-    public static function edit($id, $firstname,$secondname,$lastname, $password)// можно добавить больше полей
+    public static function edit($id, $firstname,$secondname,$lastname, $password)
     {       
             $db = Db::getConnection();
             $sql="UPDATE user SET firstname= :firstname, secondname= :secondname, lastname= :lastname, password= :password WHERE id= :id";
@@ -129,7 +129,7 @@ class User
             $result->bindParam(':secondname', $secondname, PDO::PARAM_STR);
             $result->bindParam(':lastname', $lastname, PDO::PARAM_STR);
             $result->bindParam(':password', $password, PDO::PARAM_STR);
-            //указываем что хотим получить дальше(массив)
+            //получаем массив
             $result->setFetchMode(PDO::FETCH_ASSOC);
             return $result->execute();
 

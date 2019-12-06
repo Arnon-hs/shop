@@ -36,15 +36,6 @@
                 </a>
             </div>
         </div>
-    
-        <!-- <div class="category col-2">
-            <ul class="list-group list-group-flush ">
-                <li class="list-group-item"><a href="">Чай</a></li>
-                <li class="list-group-item"><a href="">Кофе</a></li>
-                <li class="list-group-item"><a href="">Сладкое</a></li>
-                <li class="list-group-item"><a href="">Аксессуары</a></li>
-            </ul>
-        </div> -->
         <div class="wrapper">
             <div class="container box_wrapper mt-4">
                 <div class="row justify-content-between">

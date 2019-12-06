@@ -1,15 +1,10 @@
 <?php
 
-/**
- * Контроллер AdminProductController
- * Управление товарами в админпанели
- */
+
 class AdminProductController extends AdminBase
 {
 
-    /**
-     * Action для страницы "Управление товарами"
-     */
+   
     public function actionIndex()
     {
         // Проверка доступа
@@ -78,9 +73,7 @@ class AdminProductController extends AdminBase
         return true;
     }
 
-    /**
-     * Action для страницы "Редактировать товар"
-     */
+    
     public function actionUpdate($id)
     {
         // Проверка доступа
@@ -129,9 +122,7 @@ class AdminProductController extends AdminBase
         return true;
     }
 
-    /**
-     * Action для страницы "Удалить товар"
-     */
+    
     public function actionDelete($id)
     {
         // Проверка доступа

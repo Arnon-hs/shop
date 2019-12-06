@@ -110,7 +110,7 @@ class UserController
 
             // Получаем список товаров в заказе
             $products = Product::getProductsByIds($productsIds);
-            // $order['products']=$products;
+            $order['products']=$products;
             // echo '<br />';
             // print_r($order['products']);
         }

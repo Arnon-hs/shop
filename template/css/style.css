@@ -489,6 +489,9 @@ body {
 .banner a:hover{
     color:#8DECB0;
 }
+.form-control{
+    border-color: #42b983 !important;
+}
 .add-to-cart {
     color: white;
     font-size: 15px;

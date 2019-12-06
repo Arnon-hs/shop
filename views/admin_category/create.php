@@ -3,9 +3,6 @@
 <section>
     <div class="container">
         <div class="row">
-
-            <br/>
-
             <div class="breadcrumbs">
                 <ol class="breadcrumb">
                     <li><a href="/admin">Админпанель</a></li>

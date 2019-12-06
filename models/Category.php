@@ -3,9 +3,7 @@
 class Category
 {
 
-    /**
-     * Returns an array of categories
-     */
+    
     public static function getCategoriesList()
     {
 

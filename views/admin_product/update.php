@@ -1,11 +1,10 @@
 <?php include ROOT . '/views/layouts/header_admin.php'; ?>
 
 <section>
-    <div class="container">
+    <div class="container mb-4">
         <div class="row">
 
-            <br/>
-
+           
             <div class="breadcrumbs">
                 <ol class="breadcrumb">
                     <li><a href="/admin" >Админпанель</a></li>
