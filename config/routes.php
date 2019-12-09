@@ -3,6 +3,8 @@
 return array(
     // Товар
     'product/([0-9]+)' => 'product/view/$1', // actionView в ProductController
+    //Услуги
+    'services'=> 'site/services',
     // Каталог
     'catalog' => 'catalog/index', // actionIndex в CatalogController
     // Категория товаров

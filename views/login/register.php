@@ -1,5 +1,5 @@
 <?php include ROOT . '/views/layouts/header.php'; ?>
-
+<div class="container">
 <form method="post" action="#" class="reg mt-3 mb-3">
 <?php if ($result): ?>
     <div class="row justify-content-center">
@@ -24,43 +24,45 @@
         <?php endif; ?>
         
         
-        <div class="col-md-12 mb-3">
+        <div class="col-lg-6 col-sm-12 offset-lg-3 mb-3 mt-3">
             <label>Фамилия</label>
             <input type="text" class="form-control" placeholder="Иванов" value="" name="secondName">
             
         </div>
-        <div class="col-md-12 mb-3">
+        <div class="col-lg-6 col-sm-12 offset-lg-3 mb-3">
             <label>Имя</label>
             <input type="text" class="form-control"  placeholder="Иван" value="" name="firstName">
             
         </div>
-        <div class="col-md-12 mb-3">
+        <div class="col-lg-6 col-sm-12 offset-lg-3 mb-3">
             <label>Отчество</label>
             <input type="text" class="form-control" placeholder="Иванович" value="" name="lastName" >
             
         </div>
     
     
-        <div class="col-md-12 mb-3">
+        <div class="col-lg-6 col-sm-12 offset-lg-3 mb-3">
             <label >Email</label>
             <input type="text" class="form-control" placeholder="qwerty12345@mail.ru" value="" name="email">
             
         </div>
     
     
-        <div class="col-md-6 mb-3">
+        <div class="col-lg-3 offset-lg-3 col-sm-12 mb-3">
                 <label>Пароль</label>
                 <input type="password" class="form-control" placeholder="" name="password">
                 
         </div>
-        <div class="col-md-6 mb-3">
+        <div class="col-lg-3 col-sm-12 mb-3">
                 <label >Повторите пароль</label>
                 <input type="password" class="form-control" id="confirm_password" placeholder="" name="password_confirm" >
                 
         </div>
-    <input type="submit" name="submit" class="btn btn-primary mb-2 ml-3" value="Регистрация">
-    
+        <div class="col-lg-6 col-sm-12 offset-lg-3 mb-2">
+            <input type="submit" name="submit" class="btn btn-primary mb-2 " value="Регистрация">
+        </div>
     </div> 
     <?php endif ?>
 </form>
+</div>
 <?php include ROOT . '/views/layouts/footer.php'; ?>

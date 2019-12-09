@@ -58,7 +58,7 @@ class Category
     public static function getCategoriesCase($category)
     {
         
-            if($category>=11 && $category<=14)
+            if( $category>=8 && $category<=14 )
             {
                 $group=1;
                 return $group;
@@ -101,23 +101,24 @@ class Category
         // Возвращаем данные
         return $result->fetch();
     }
-    public static function createCategory($name, $sortOrder, $status)
+    public static function createCategory($name, $sortOrder, $status,$group)
     {
         // Соединение с БД
         $db = Db::getConnection();
 
         // Текст запроса к БД
-        $sql = 'INSERT INTO category (name, sort_order, status) '
-                . 'VALUES (:name, :sort_order, :status)';
+        $sql = 'INSERT INTO category (name, sort_order, status, groups) '
+                . 'VALUES (:name, :sort_order, :status, :groups)';
 
         // Получение и возврат результатов. Используется подготовленный запрос
         $result = $db->prepare($sql);
         $result->bindParam(':name', $name, PDO::PARAM_STR);
         $result->bindParam(':sort_order', $sortOrder, PDO::PARAM_INT);
         $result->bindParam(':status', $status, PDO::PARAM_INT);
+        $result->bindParam(':groups', $group, PDO::PARAM_INT);
         return $result->execute();
     }
-    public static function updateCategoryById($id, $name, $sortOrder, $status)
+    public static function updateCategoryById($id, $name, $sortOrder, $status,$group)
     {
         // Соединение с БД
         $db = Db::getConnection();
@@ -128,6 +129,7 @@ class Category
                 name = :name, 
                 sort_order = :sort_order, 
                 status = :status
+                groups= :groups
             WHERE id = :id";
 
         // Получение и возврат результатов. Используется подготовленный запрос
@@ -136,6 +138,7 @@ class Category
         $result->bindParam(':name', $name, PDO::PARAM_STR);
         $result->bindParam(':sort_order', $sortOrder, PDO::PARAM_INT);
         $result->bindParam(':status', $status, PDO::PARAM_INT);
+        $result->bindParam(':groups', $group, PDO::PARAM_INT);
         return $result->execute();
     }
     public static function deleteCategoryById($id)

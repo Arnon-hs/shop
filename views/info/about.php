@@ -1,7 +1,7 @@
 <?php include(ROOT.'/views/layouts/header.php'); ?>
     <div class="container">
             <h2 class="about_h2 mt-4">Наши преимущества перед конкурентами</h2>
-            <div class="about row justify-content-between mt-2 mb-3">
+            <div class="about row justify-content-between mt-4 mb-3">
                 <div class="col-lg-6 col-sm-12 about-item ">
                     <img src="/template/images/icons/icons8-flowers-96.png" alt="">
                     <p>
@@ -49,18 +49,24 @@
                 </div>
             </div>
             
-            <div class="contacts about row justify-content-md-center mb-4">
-                
+            <!-- добавить фото входа -->
+            <div class="contacts vhod about row justify-content-md-center mb-4">
+                <div class="col-lg-12">
+                <h3>Контакты</h3>
+                    <p> Мы находимся по адресу:<br/>
+                    Россия, Московская область, Балашиха, улица Евстафьева, 1/9
+                    <br/> Контактный номер телефона:
+                    <br/> +79689114453</p>
+                </div>
+                <div class="col-lg-6 col-sm-12 mb-4">
+                    
+                    <img src="/template/images/shop/vhod.jpg" alt="">
+                </div>
                 <div class="col-lg-6 col-sm-12">
-                        <h3>Контакты</h3>
-                        <p> Мы находимся по адресу:<br/>
-                        Россия, Московская область, Балашиха, улица Евстафьева, 1/9
-                        <br/> Контактный номер телефона:
-                        <br/> +79258605436</p>
-                        
                     <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2a8e02354853cd19a8b8c2729978a74f2e462dfb1a2e80818c469b6e64664b6f&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
                 </div>
             </div>
+            
     </div>
     <?php include(ROOT.'/views/layouts/footer.php'); ?>
 

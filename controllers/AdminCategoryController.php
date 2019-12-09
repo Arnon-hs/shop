@@ -29,7 +29,7 @@ class AdminCategoryController extends AdminBase
             $name = $_POST['name'];
             $sortOrder = $_POST['sort_order'];
             $status = $_POST['status'];
-
+            $group=$_POST['groups'];
             // Флаг ошибок в форме
             $errors = false;
 
@@ -42,7 +42,7 @@ class AdminCategoryController extends AdminBase
             if ($errors == false) {
                 // Если ошибок нет
                 // Добавляем новую категорию
-                Category::createCategory($name, $sortOrder, $status);
+                Category::createCategory($name, $sortOrder, $status,$group);
 
                 // Перенаправляем пользователя на страницу управлениями категориями
                 header("Location: /admin/category");
@@ -68,9 +68,9 @@ class AdminCategoryController extends AdminBase
             $name = $_POST['name'];
             $sortOrder = $_POST['sort_order'];
             $status = $_POST['status'];
-
+            $group=$_POST['groups'];
             // Сохраняем изменения
-            Category::updateCategoryById($id, $name, $sortOrder, $status);
+            Category::updateCategoryById($id, $name, $sortOrder, $status, $group);
 
             // Перенаправляем пользователя на страницу управлениями категориями
             header("Location: /admin/category");

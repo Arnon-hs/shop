@@ -63,9 +63,9 @@
                 <div class="row justify-content-between">
                     <div class="col-lg-4 col-sm-12 sladkoe_box " >
                         <a href="/category/22">
-                            <img src="/template/images/home/4.jpg" alt="">
+                            <img src="/template/images/slider/15.jpg" alt="">
                             <div class="banner-short-shok banner ">
-                                <a href="/category/22"> Сладкое </a>
+                                <a href="/category/22">Шарики </a>
                             </div>
                         </a>
                     </div>

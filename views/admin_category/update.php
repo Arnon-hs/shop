@@ -36,6 +36,14 @@
                             <option value="0" <?php if ($category['status'] == 0) echo ' selected="selected"'; ?>>Скрыта</option>
                         </select>
                         
+                        <p>Группа категорий</p>
+                        <select name="groups" class="form-control mb-2">
+                            <option value="1" <?php if ($category['groups'] == 1) echo ' selected="selected"'; ?>>1</option>
+                            <option value="2" <?php if ($category['groups'] == 2) echo ' selected="selected"'; ?>>2</option>
+                            <option value="3" <?php if ($category['groups'] == 3) echo ' selected="selected"'; ?>>3</option>
+                            <option value="4" <?php if ($category['groups'] == 4) echo ' selected="selected"'; ?>>4</option>
+                        </select>
+
                         <input type="submit" name="submit" class="btn btn-primary" value="Сохранить">
                     </form>
                 </div>

@@ -31,11 +31,11 @@ body {
 	min-height: 100%;
 }
 .logo{
-    width: 100px !important;
-    height: auto;
+    height: 100px;
+    width: auto;
 }
 .logo img{
-    width: 100%;
+    width: auto;
     height: 100%;
 }
 .login{
@@ -50,7 +50,10 @@ body {
     padding: 0 !important;
 }
 
-
+.vhod img{
+    height: 500px;
+    width: auto;
+}
 .voiti{
     font-size: 18px;
     color: #f592bb;
@@ -279,6 +282,16 @@ body {
     font-family: "RegularFontBold";
     font-size: 20px;
 }
+@media (max-width: 760px) {
+    .carousel-item p{
+        padding-bottom: 5rem;
+        padding-left: 2rem;
+    }
+    .carousel-item span{
+        padding-bottom: 2.5rem;
+        padding-left: 2rem;
+    }
+  }
 .img-search{
     position: absolute;
     right: 30px;
@@ -331,12 +344,12 @@ body {
     text-align: center;
 
 }
-.about img{
+/* .about img{
     display: block;
     margin: 0 auto;
     margin-top: 10%;
      
-}
+} */
 .about h3{
     color:rgb(40, 167, 69);
 }
@@ -412,7 +425,11 @@ body {
 .productinfo img{
     object-fit: cover;
     height: 200px;
-
+}
+@media(max-width:760px){
+    .productinfo img{
+        height: 20rem;
+    }
 }
 .pag{
     position: absolute;
@@ -516,7 +533,10 @@ body {
   .header-middle .container .row .col-md-4 {
       padding-right:0;
   }
-.shop-menu ul{
+  .shop-menu{
+    text-align: center;
+  }
+.shop-menu ul{  
     display: inline-block !important;
 } 
 .shop-menu li {

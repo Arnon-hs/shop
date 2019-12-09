@@ -1,7 +1,7 @@
 <?php include ROOT . '/views/layouts/header.php'; ?>
 
 <section>
-    <div class="container mt-2">
+    <div class="container mt-2 mb-4">
         <div class="row">       
             <div class="breadcrumbs">
                 <ol class="breadcrumb">
@@ -15,6 +15,7 @@
             </div>
             <?php foreach ($ordersList as $order): ?>
             <table class="table-bordered table-striped table">
+                <table class="table-bordered table-striped table"> 
                 <tr>
                     <th>ID заказа</th>
                     <th>Имя покупателя</th>
@@ -22,11 +23,8 @@
                     <th>Дата оформления</th>
                     <th>Статус</th>
                     <th>Комментарий</th>
-                </tr>
-                
-                
-                <?php $sum=0;?>
                     
+                </tr>
                     <tr>
                         <td><?php echo $order['id']; ?></td>
                         <td><?php echo $order['user_name']; ?></td>
@@ -34,22 +32,24 @@
                         <td><?php echo $order['date']; ?></td>
                         <td><?php echo Order::getStatusText($order['status']); ?></td>    
                         <td><?php echo $order['user_comment'];?></td>
-                        <tr>
-                            <th>Товары</th>
-                            <th>Количество</th>
-                            <th>Цена</th>
-                        </tr>
                         
+                        
+                    </tr>
+                </table>
+                    <!-- <table class="table-bordered table-striped table"> 
+                        <th>Товары</th>
+                        <th>Количество</th>
+                        <th>Цена</th> 
                         <tr>
                             <?php foreach ($products as $product):?>
-                            <!-- выводит последние товары!!! -->
-                                <tr>
-                                    <td><?php echo $product['name']; ?></td>
-                                    <td><?php echo $productsQuantity[$product['id']];?>
+                            
+                            
+                                    <td><tr><?php echo $product['name']; ?></tr></td>
+                                    <td><?php echo $productsQuantity[$product['id']];?></td>
                                     <td><?php echo $product['price']; ?></td>
                                     <?php 
                                     $sum=$sum+($product['price']*$productsQuantity[$product['id']])?>
-                                </tr>
+                            
                             <?php endforeach;?>
                         </tr>
                         
@@ -57,8 +57,37 @@
                                 <td colspan="2 ">Общая стоимость:</td>
                                 <td><?php echo $sum?>р</td>
                             </tr>
-                    </tr>
-                    
+                    </table> -->
+                    <?php $sum=0;?>
+                    <table class="table-bordered table-striped table">
+                            <tr>
+                                <th>Код товара</th>
+                                <th>Название</th>
+                                <th>Количество, шт</th>
+                                <th>Стомость, р</th>
+                            </tr>
+                            <?php foreach ($productsInOrder as $products) :?>
+                                <?php foreach ($products as $product): ?>
+                                    <tr>
+                                        <td><?php echo $product['code'];?></td>
+                                        <td>
+                                            <a href="/product/<?php echo $product['id'];?>">
+                                                <?php echo $product['name'];?>
+                                            </a>
+                                        </td>
+                                        <td><?php echo $productsQuantity[$product['id']];?></td> 
+                                        <td><?php echo $product['price'];?></td>  
+                                        <?php 
+                                        $sum=$sum+($product['price']*$productsQuantity[$product['id']])?>                   
+                                    </tr>
+                                <?php endforeach; ?>
+                            <?php endforeach;?>
+                                <tr>
+                                    <td colspan="3">Общая стоимость:</td>
+                                    <td><?php echo $sum;?></td>
+                                </tr>
+                            
+                        </table>
                     </table> 
                 <?php endforeach; ?>
                 

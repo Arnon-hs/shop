@@ -23,4 +23,9 @@ class SiteController
         require_once(ROOT . '/views/info/about.php');
         return true;
     }
+    public function actionServices()
+    {
+        require_once(ROOT. '/views/info/services.php');
+        return true;
+    }
 }

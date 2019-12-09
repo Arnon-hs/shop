@@ -58,7 +58,7 @@
             </ul>
             <div class="number h_m col-sm-10 col-lg-4 ">
               <img class="ml-2" src="/template/images/icons/icons8-phone-50.png"> 
-              <span>+79258605436</span>
+              <span>+79689114453</span>
               <a href="/contacts/"><img class="ml-2" src="/template/images/icons/icons8-email-50.png">Обратная связь</a>
             </div>
           </div>
@@ -67,10 +67,8 @@
       <div class="header-middle">
         <div class="container">
           <div class="row justify-content-between align-items-center">
-            <div class="col-lg-2 col-sm-2 ml-2">
-              <div class="logo ">
+            <div class="col-lg-2 col-sm-2 ml-2 logo">
                 <a href="/"><img src="/template/images/shop/logo.jpg"></a>
-              </div>
             </div>
             <div class="col ">
               <div class="div-search">
@@ -101,7 +99,7 @@
 
             <div class="col-lg-4 col-sm-12  mt-2 mr-2 pull-right">
               <div class="shop-menu ">
-                <ul class="nav navbar-nav float-right h_m ">
+                <ul class="nav navbar-nav h_m ">
                   <li><a href="/cart/">
                     <img src="/template/images/icons/icons8-shopping-cart-50.png">
                       Корзина
@@ -124,11 +122,14 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
               aria-haspopup="true" aria-expanded="false">Цветы</a>
-            <div class="dropdown-menu">
+            <div class="dropdown-menu pl-2">
+              <a class="dropdown-item" href="/category/13">Роза кустовая</a>
               <a class="dropdown-item" href="/category/11">Розы</a>
               <a class="dropdown-item" href="/category/12">Хризантемы</a>
-              <a class="dropdown-item" href="/category/13">Орхидеи</a>
-              <a class="dropdown-item" href="/category/14">Ромашки</a>
+              <a class="dropdown-item" href="/category/14">Лилии</a>
+              <a class="dropdown-item" href="/category/9">Гвоздики</a>
+              <a class="dropdown-item" href="/category/10">Экзотические</a>
+              <a class="dropdown-item" href="/category/8">Зелень</a>
               <a class="dropdown-item" href="/catalog">Полный каталог</a>
             </div>
           </li>
@@ -136,9 +137,9 @@
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
               aria-expanded="false">Букеты и композиции</a>
             <div class="dropdown-menu">
-              <a class="dropdown-item" href="/category/15">На праздник</a>
-              <a class="dropdown-item" href="/category/16">По особому поводу</a>
-              <a class="dropdown-item" href="/category/17">Букеты из конфет</a>
+              <a class="dropdown-item" href="/category/15">Мужские</a>
+              <a class="dropdown-item" href="/category/16">Женские</a>
+              <a class="dropdown-item" href="/category/17">Детские</a>
               <a class="dropdown-item" href="/catalog">Полный каталог</a>
             </div>
           </li>
@@ -148,17 +149,16 @@
             <div class="dropdown-menu">
               <a class="dropdown-item" href="/category/19">В подарок</a>
               <a class="dropdown-item" href="/category/20">Комнатные</a>
-              <a class="dropdown-item" href="/category/21">Сезонные</a>
               <a class="dropdown-item" href="/catalog">Полный каталог</a>
             </div>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
               aria-expanded="false">Сопутствующие товары </a>
-            <div class="dropdown-menu">
-              <h5>Сладкое</h5>
-              <a class="dropdown-item" href="/category/22">Шоколадки</a>
-              <a class="dropdown-item" href="/category/23">Конфеты</a>
+            <div class="dropdown-menu pl-2">
+              <h5>Гелевые шарики</h5>
+              <a class="dropdown-item" href="/category/22">Латексные</a>
+              <a class="dropdown-item" href="/category/23">Фольгированные</a>
               <div class="dropdown-divider"></div>
               <h5>Игрушки</h5>
               <a class="dropdown-item" href="/category/24">Плюшевые</a>
@@ -168,8 +168,18 @@
               <a class="dropdown-item" href="/category/26">Ручной работы</a>
               <a class="dropdown-item" href="/category/27">Оригинальные</a>
               <div class="dropdown-divider"></div>
+              <h5>Сопутствующие товары</h5>
+              <a class="dropdown-item" href="/category/26">Коробки</a>
+              <a class="dropdown-item" href="/category/27">Сувениры</a>
+              <a class="dropdown-item" href="/category/27">Корзины</a>
+              <a class="dropdown-item" href="/category/27">Кашпо</a>
+              <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="/catalog">Полный каталог</a>
             </div>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link " href="/services/" role="button" aria-haspopup="true"
+              aria-expanded="false">Оформление торжеств</a>
           </li>
         </ul>
       </div>

@@ -1,7 +1,7 @@
 <?php include ROOT . '/views/layouts/header_admin.php'; ?>
 
 <section>
-    <div class="container">
+    <div class="container mb-5">
         <div class="row">
             <div class="breadcrumbs">
                 <ol class="breadcrumb">
@@ -39,6 +39,14 @@
                         <select name="status" class="form-control mb-2">
                             <option value="1" selected="selected">Отображается</option>
                             <option value="0">Скрыта</option>
+                        </select>
+
+                        <p>Группа категорий</p>
+                        <select name="groups" class="form-control mb-2">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4    ">4</option>
                         </select>
                         <input type="submit" name="submit" class="btn btn-primary" value="Сохранить">
                     </form>

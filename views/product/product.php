@@ -45,7 +45,6 @@
                     <div class="advantages pr-4 pl-4 pt-4 pb-4">
                         <p><img src="/template/images/icons/icons8-delivery-50.png" alt=""> <span>Доставка</span><br />   Доставка осуществляется в течении 1-2 дней курьерской службой</p>
                         <p><img src="/template/images/icons/icons8-open-envelope-love-64.png" alt=""><span>Подарочный конверт</span><br /> В комплекте открытка, средство для ухода за цветами, инструкция</p>
-                        <p><img src="/template/images/icons/icons8-guarantee-64.png" alt=""><span>Гарантия качества</span><br /> Замена букета или возврат денег</p>
                     </div>
                 </div>
             </div>
@@ -56,11 +55,11 @@
                     <p><?php echo $product['description'];?></p>
                     <p><b>Страна производитель:</b> <?php echo $product['brand'];?></p>
             </div>
-            <div class="col-sm-12 pohojie">
+            <div class="col-sm-12 pohojie mb-5">
                 <h4>Похожие товары</h4>
                 <div class="row">
                 <?php foreach ($sliderProducts as $sliderItem): ?>
-                            <div class="item col-6 mb-5 mt-2">
+                            <div class="item col-sm-6 col-lg-3 mb-5 mt-2">
                                 <div class="product-image-wrapper">
                                     <div class="single-products">
                                         <div class="productinfo text-center ">
