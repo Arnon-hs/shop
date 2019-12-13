@@ -36,28 +36,7 @@
                         
                     </tr>
                 </table>
-                    <!-- <table class="table-bordered table-striped table"> 
-                        <th>Товары</th>
-                        <th>Количество</th>
-                        <th>Цена</th> 
-                        <tr>
-                            <?php foreach ($products as $product):?>
-                            
-                            
-                                    <td><tr><?php echo $product['name']; ?></tr></td>
-                                    <td><?php echo $productsQuantity[$product['id']];?></td>
-                                    <td><?php echo $product['price']; ?></td>
-                                    <?php 
-                                    $sum=$sum+($product['price']*$productsQuantity[$product['id']])?>
-                            
-                            <?php endforeach;?>
-                        </tr>
-                        
-                            <tr>
-                                <td colspan="2 ">Общая стоимость:</td>
-                                <td><?php echo $sum?>р</td>
-                            </tr>
-                    </table> -->
+                    
                     <?php $sum=0;?>
                     <table class="table-bordered table-striped table">
                             <tr>
@@ -66,8 +45,17 @@
                                 <th>Количество, шт</th>
                                 <th>Стомость, р</th>
                             </tr>
-                            <?php foreach ($productsInOrder as $products) :?>
-                                <?php foreach ($products as $product): ?>
+                            
+                                <?php          $productsQuantity = json_decode($order['products'], true);
+
+// Получаем массив с индентификаторами товаров
+$productsIds = array_keys($productsQuantity);
+
+
+// Получаем список товаров в заказе
+$products = Product::getProductsByIds($productsIds);
+
+                                foreach ($products as $product): ?>
                                     <tr>
                                         <td><?php echo $product['code'];?></td>
                                         <td>
@@ -81,12 +69,10 @@
                                         $sum=$sum+($product['price']*$productsQuantity[$product['id']])?>                   
                                     </tr>
                                 <?php endforeach; ?>
-                            <?php endforeach;?>
                                 <tr>
                                     <td colspan="3">Общая стоимость:</td>
                                     <td><?php echo $sum;?></td>
-                                </tr>
-                            
+                                </tr>   
                         </table>
                     </table> 
                 <?php endforeach; ?>

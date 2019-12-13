@@ -8,7 +8,7 @@ function search_autocomplete(){
     $res = mysqli_query($db, $query);
     $result_search = array();
     while($row = mysqli_fetch_assoc($res)){
-    $result_search[] = array('label' => $row['name']);
+    $result_search[] = array('label' => $row['name']);//a href
     }
     return $result_search;
    }

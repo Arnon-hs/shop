@@ -99,7 +99,7 @@ class UserController
         // Получаем данные о конкретном заказе
         $ordersList=array();
         $ordersList = Order::getOrdersListById($userId);
-        $productsInOrder=array();
+        // $productsInOrder=array();
         foreach($ordersList as $order){
             // print_r($order);
             // echo '<br />';
@@ -112,10 +112,10 @@ class UserController
             
             // Получаем список товаров в заказе
             $products = Product::getProductsByIds($productsIds);
-            array_push($productsInOrder, $products);
-            echo '<br />';
-            print_r($productsInOrder);
-            echo '<br />';
+            // array_push($productsInOrder, $products);
+            // echo '<br />';
+            // print_r($productsInOrder);
+            // echo '<br />';
             // echo '<br />';
             // print_r($order['products']);
         }

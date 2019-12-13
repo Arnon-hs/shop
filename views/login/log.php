@@ -2,7 +2,6 @@
 <div class="container">
     <div class="row ">
     <form action="#" method="post" style="width: 100%">
-        
             <div class="col-lg-6 offset-lg-3 col-sm-12 mb-3 mt-3 text-center">
                 <h5>Вход на сайт</h5>
                 <?php if(isset($errors)&& is_array($errors)): ?>

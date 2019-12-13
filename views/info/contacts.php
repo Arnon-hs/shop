@@ -1,6 +1,10 @@
 <?php include ROOT . '/views/layouts/header.php'; ?>
 <div class="container">
     <div class="row ">
+    <?php 
+    
+        var_dump(in_array('test', [0,1]));
+        ?>
     <form action="#" method="post" style="width: 100%">
         
             <div class="col-md-6 offset-lg-3 mb-3 mt-3 text-center">
