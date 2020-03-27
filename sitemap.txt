@@ -1,0 +1,8 @@
+﻿http://pretty-flowers.ru
+http://pretty-flowers.ru/user/login
+http://pretty-flowers.ru/user/register
+http://pretty-flowers.ru/about
+http://pretty-flowers.ru/catalog/
+http://pretty-flowers.ru/category/
+http://pretty-flowers.ru/services
+http://pretty-flowers.ru/product/

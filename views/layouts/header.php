@@ -50,13 +50,13 @@
       <div class="header-top pt-2 pb-2">
         <div class="about_us container">
           <div class="menu navbar-nav-scroll row justify-content-center align-items-center">
-            <ul class="navbar-nav bd-navbar-nav flex-row col-sm-12 col-lg-8 h_m">
+            <ul class="navbar-nav bd-navbar-nav flex-row col-sm-8 offset-sm-2 col-lg-8 offset-lg-0 h_m">
               <li class="mr-4"><a href="/about/"><img src="/template/images/icons/icons8-about-50.png">О нас</a></li>
               <li class="mr-4"><a href="/about/"><img src="/template/images/icons/icons8-wallet-50.png">Оплата</a></li>
               <li class="mr-4"><a href="/about/"><img src="/template/images/icons/icons8-delivery-50.png"> Доставка</a></li>
               <li class="mr-4"><a href="/about/"><img src="/template/images/icons/icons8-contact-us-50.png"> Контакты</a></li>
             </ul>
-            <div class="number h_m col-sm-10 col-lg-4 ">
+            <div class="number h_m col-sm-8 offset-sm-2 offset-lg-0 col-lg-4 ">
               <img class="ml-2" src="/template/images/icons/icons8-phone-50.png"> 
               <span>+79689114453</span>
               <a href="/contacts/"><img class="ml-2" src="/template/images/icons/icons8-email-50.png">Обратная связь</a>
@@ -97,7 +97,7 @@
               });
             </script>
 
-            <div class="col-lg-4 col-sm-12  mt-2 mr-2 pull-right">
+            <div class="col-lg-4 col-sm-12 mb-2 mt-2 mr-2 pull-right">
               <div class="shop-menu ">
                 <ul class="nav navbar-nav h_m ">
                   <li><a href="/cart/">

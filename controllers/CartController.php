@@ -87,7 +87,7 @@ class CartController
 
                 if ($result) {
                     // Оповещаем администратора о новом заказе                
-                    $adminEmail = 'anyaflorist2019@mail.com';
+                    $adminEmail = 'anyaflorist2019@mail.ru';
                     $message = 'Сообщение';
                     $subject = 'Новый заказ!';
                     mail($adminEmail, $subject, $message);

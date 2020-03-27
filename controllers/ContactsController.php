@@ -16,9 +16,9 @@ class ContactsController
                 $errors[]='Неправильный email';
             }
             if($errors==false){
-                $adminEmail="anyaflorist2019@mail.com";
-                $subject= 'Тема письма';
-                $message='Текст: {$userText}. От {$userEmail}';
+                $adminEmail="anyaflorist2019@mail.ru";
+                $subject= "Тема письма";
+                $message="Текст: ${userText}.  От  ${userEmail}.";
                 $result=mail($adminEmail,$subject,$message);
                 $result=true;
             }

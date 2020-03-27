@@ -2,7 +2,7 @@
     <div class="container mt-4">
             <div class="content_product row">
                 <div class="col-lg-7 col-sm-12 ">
-                    <div class="img_photo">
+                    <div class=" img_photo offset-sm-3 ">
                         <img src="<?php echo Product::getImage($product['id']); ?>">
                     </div>
                 </div>
@@ -37,7 +37,7 @@
                         </div> -->
                     </div>
                     <div class="row">
-                        <a id="buttonAdd" href="/cart/add/<?php echo $product['id']; ?>/1" class="col-6 mt-2">
+                        <a id="buttonAdd" href="/cart/add/<?php echo $product['id']; ?>/1" class="col-6 mt-2  offset-sm-3 ">
                             <button type="button" class="btn btn-primary" style="width:100%;">В корзину</button>
                         </a>
                     </div>
